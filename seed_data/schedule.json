@@ -1,0 +1,5567 @@
+[
+  {
+    "kelas": "X - A",
+    "hari": "Senin",
+    "kode_guru": "9",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Senin",
+    "kode_guru": "29",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Senin",
+    "kode_guru": "42",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Senin",
+    "kode_guru": "20",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Selasa",
+    "kode_guru": "14",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Selasa",
+    "kode_guru": "31",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Selasa",
+    "kode_guru": "25",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Selasa",
+    "kode_guru": "33",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Rabu",
+    "kode_guru": "64",
+    "period_start": 1,
+    "period_end": 1
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Rabu",
+    "kode_guru": "58",
+    "period_start": 2,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Rabu",
+    "kode_guru": "29",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Rabu",
+    "kode_guru": "35",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Rabu",
+    "kode_guru": "50",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Kamis",
+    "kode_guru": "27",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Kamis",
+    "kode_guru": "10",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Kamis",
+    "kode_guru": "54",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Kamis",
+    "kode_guru": "46",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Jumat",
+    "kode_guru": "20",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - A",
+    "hari": "Jumat",
+    "kode_guru": "24",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Senin",
+    "kode_guru": "29",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Senin",
+    "kode_guru": "20",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Senin",
+    "kode_guru": "9",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Senin",
+    "kode_guru": "50",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Selasa",
+    "kode_guru": "25",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Selasa",
+    "kode_guru": "14",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Selasa",
+    "kode_guru": "31",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Selasa",
+    "kode_guru": "58",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Rabu",
+    "kode_guru": "35",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Rabu",
+    "kode_guru": "27",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Rabu",
+    "kode_guru": "64",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Rabu",
+    "kode_guru": "24",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Rabu",
+    "kode_guru": "54",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Kamis",
+    "kode_guru": "46",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Kamis",
+    "kode_guru": "29",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Kamis",
+    "kode_guru": "42",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Kamis",
+    "kode_guru": "27",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Kamis",
+    "kode_guru": "53.1",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Jumat",
+    "kode_guru": "33",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - B",
+    "hari": "Jumat",
+    "kode_guru": "20",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Senin",
+    "kode_guru": "25",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Senin",
+    "kode_guru": "50",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Senin",
+    "kode_guru": "20",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Senin",
+    "kode_guru": "29",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Selasa",
+    "kode_guru": "9",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Selasa",
+    "kode_guru": "54",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Selasa",
+    "kode_guru": "58",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Selasa",
+    "kode_guru": "64",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Selasa",
+    "kode_guru": "14",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Rabu",
+    "kode_guru": "53.1",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Rabu",
+    "kode_guru": "54",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Rabu",
+    "kode_guru": "20",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Rabu",
+    "kode_guru": "29",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Rabu",
+    "kode_guru": "24",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Kamis",
+    "kode_guru": "31",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Kamis",
+    "kode_guru": "46",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Kamis",
+    "kode_guru": "33",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Kamis",
+    "kode_guru": "27",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Jumat",
+    "kode_guru": "35",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - C",
+    "hari": "Jumat",
+    "kode_guru": "42",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Senin",
+    "kode_guru": "20",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Senin",
+    "kode_guru": "24",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Senin",
+    "kode_guru": "29",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Senin",
+    "kode_guru": "42",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Selasa",
+    "kode_guru": "33",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Selasa",
+    "kode_guru": "27",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Selasa",
+    "kode_guru": "9",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Selasa",
+    "kode_guru": "46",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Rabu",
+    "kode_guru": "25",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Rabu",
+    "kode_guru": "20",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Rabu",
+    "kode_guru": "54",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Rabu",
+    "kode_guru": "58",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Rabu",
+    "kode_guru": "53.1",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Kamis",
+    "kode_guru": "35",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Kamis",
+    "kode_guru": "64",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Kamis",
+    "kode_guru": "50",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Kamis",
+    "kode_guru": "25",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Kamis",
+    "kode_guru": "29",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Kamis",
+    "kode_guru": "14",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Jumat",
+    "kode_guru": "54",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - D",
+    "hari": "Jumat",
+    "kode_guru": "31",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Senin",
+    "kode_guru": "31",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Senin",
+    "kode_guru": "33",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Senin",
+    "kode_guru": "25",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Selasa",
+    "kode_guru": "27",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Selasa",
+    "kode_guru": "35",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Selasa",
+    "kode_guru": "9",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Selasa",
+    "kode_guru": "54",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Selasa",
+    "kode_guru": "29",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Rabu",
+    "kode_guru": "50",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Rabu",
+    "kode_guru": "51",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Rabu",
+    "kode_guru": "61",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Rabu",
+    "kode_guru": "14",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Rabu",
+    "kode_guru": "20",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Kamis",
+    "kode_guru": "42",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Kamis",
+    "kode_guru": "53.1",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Kamis",
+    "kode_guru": "29",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Kamis",
+    "kode_guru": "46",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Kamis",
+    "kode_guru": "20",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Jumat",
+    "kode_guru": "51",
+    "period_start": 1,
+    "period_end": 1
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Jumat",
+    "kode_guru": "64",
+    "period_start": 2,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Jumat",
+    "kode_guru": "27",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - E",
+    "hari": "Jumat",
+    "kode_guru": "35",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Senin",
+    "kode_guru": "33",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Senin",
+    "kode_guru": "31",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Senin",
+    "kode_guru": "35",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Selasa",
+    "kode_guru": "61",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Selasa",
+    "kode_guru": "29",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Selasa",
+    "kode_guru": "62",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Selasa",
+    "kode_guru": "14",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Selasa",
+    "kode_guru": "25",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Rabu",
+    "kode_guru": "27",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Rabu",
+    "kode_guru": "9",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Rabu",
+    "kode_guru": "20",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Rabu",
+    "kode_guru": "51",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Kamis",
+    "kode_guru": "20",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Kamis",
+    "kode_guru": "50",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Kamis",
+    "kode_guru": "25",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Kamis",
+    "kode_guru": "53.1",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Kamis",
+    "kode_guru": "64",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Kamis",
+    "kode_guru": "29",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Jumat",
+    "kode_guru": "42",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - F",
+    "hari": "Jumat",
+    "kode_guru": "54",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Senin",
+    "kode_guru": "50",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Senin",
+    "kode_guru": "64",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Senin",
+    "kode_guru": "58",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Senin",
+    "kode_guru": "52",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Selasa",
+    "kode_guru": "29",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Selasa",
+    "kode_guru": "20",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Selasa",
+    "kode_guru": "61.1",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Selasa",
+    "kode_guru": "4",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Selasa",
+    "kode_guru": "51",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Rabu",
+    "kode_guru": "9",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Rabu",
+    "kode_guru": "61.1",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Rabu",
+    "kode_guru": "23",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Rabu",
+    "kode_guru": "54",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Rabu",
+    "kode_guru": "27",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Kamis",
+    "kode_guru": "29",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Kamis",
+    "kode_guru": "23",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Kamis",
+    "kode_guru": "20",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Kamis",
+    "kode_guru": "42",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Kamis",
+    "kode_guru": "35",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Jumat",
+    "kode_guru": "53.1",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - G",
+    "hari": "Jumat",
+    "kode_guru": "62",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Senin",
+    "kode_guru": "53.1",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Senin",
+    "kode_guru": "54",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Senin",
+    "kode_guru": "58",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Selasa",
+    "kode_guru": "52",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Selasa",
+    "kode_guru": "4",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Selasa",
+    "kode_guru": "20",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Selasa",
+    "kode_guru": "29",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Selasa",
+    "kode_guru": "23",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Rabu",
+    "kode_guru": "61.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Rabu",
+    "kode_guru": "29",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Rabu",
+    "kode_guru": "27",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Rabu",
+    "kode_guru": "62",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Rabu",
+    "kode_guru": "42",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Kamis",
+    "kode_guru": "9",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Kamis",
+    "kode_guru": "35",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Kamis",
+    "kode_guru": "52",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Kamis",
+    "kode_guru": "20",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Kamis",
+    "kode_guru": "50",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Jumat",
+    "kode_guru": "64",
+    "period_start": 1,
+    "period_end": 1
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Jumat",
+    "kode_guru": "61.1",
+    "period_start": 2,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - H",
+    "hari": "Jumat",
+    "kode_guru": "51",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Senin",
+    "kode_guru": "35",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Senin",
+    "kode_guru": "42",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Senin",
+    "kode_guru": "48",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Senin",
+    "kode_guru": "54",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Selasa",
+    "kode_guru": "59",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Selasa",
+    "kode_guru": "62",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Selasa",
+    "kode_guru": "36",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Selasa",
+    "kode_guru": "20",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Selasa",
+    "kode_guru": "4",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Rabu",
+    "kode_guru": "20",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Rabu",
+    "kode_guru": "36",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Rabu",
+    "kode_guru": "51",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Rabu",
+    "kode_guru": "50",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Rabu",
+    "kode_guru": "61.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Rabu",
+    "kode_guru": "66",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Kamis",
+    "kode_guru": "52",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Kamis",
+    "kode_guru": "54",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Kamis",
+    "kode_guru": "9",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Kamis",
+    "kode_guru": "66",
+    "period_start": 8,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Kamis",
+    "kode_guru": "58",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Jumat",
+    "kode_guru": "23",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Jumat",
+    "kode_guru": "64",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - I",
+    "hari": "Jumat",
+    "kode_guru": "61.1",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Senin",
+    "kode_guru": "12",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Senin",
+    "kode_guru": "48",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Senin",
+    "kode_guru": "36",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Senin",
+    "kode_guru": "49",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Selasa",
+    "kode_guru": "62",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Selasa",
+    "kode_guru": "2",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Selasa",
+    "kode_guru": "66",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Selasa",
+    "kode_guru": "61.1",
+    "period_start": 8,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Selasa",
+    "kode_guru": "52",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Rabu",
+    "kode_guru": "23",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Rabu",
+    "kode_guru": "64",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Rabu",
+    "kode_guru": "59",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Rabu",
+    "kode_guru": "62.1",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Rabu",
+    "kode_guru": "42",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Rabu",
+    "kode_guru": "36",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Kamis",
+    "kode_guru": "54",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Kamis",
+    "kode_guru": "59",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Kamis",
+    "kode_guru": "58",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Kamis",
+    "kode_guru": "48",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Kamis",
+    "kode_guru": "61.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Jumat",
+    "kode_guru": "30",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - J",
+    "hari": "Jumat",
+    "kode_guru": "2",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Senin",
+    "kode_guru": "30",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Senin",
+    "kode_guru": "52",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Senin",
+    "kode_guru": "12",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Selasa",
+    "kode_guru": "54",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Selasa",
+    "kode_guru": "59",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Selasa",
+    "kode_guru": "51.2",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Selasa",
+    "kode_guru": "62",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Selasa",
+    "kode_guru": "56",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Rabu",
+    "kode_guru": "62.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Rabu",
+    "kode_guru": "40.1",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Rabu",
+    "kode_guru": "66",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Rabu",
+    "kode_guru": "23",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Rabu",
+    "kode_guru": "56",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Kamis",
+    "kode_guru": "59",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Kamis",
+    "kode_guru": "42",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Kamis",
+    "kode_guru": "48",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Kamis",
+    "kode_guru": "66",
+    "period_start": 6,
+    "period_end": 6
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Kamis",
+    "kode_guru": "61",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Kamis",
+    "kode_guru": "49",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Jumat",
+    "kode_guru": "40.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Jumat",
+    "kode_guru": "49.1",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - K",
+    "hari": "Jumat",
+    "kode_guru": "48",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Senin",
+    "kode_guru": "54",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Senin",
+    "kode_guru": "12",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Senin",
+    "kode_guru": "30",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Selasa",
+    "kode_guru": "51.2",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Selasa",
+    "kode_guru": "35.1",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Selasa",
+    "kode_guru": "23",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Selasa",
+    "kode_guru": "56",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Selasa",
+    "kode_guru": "62",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Rabu",
+    "kode_guru": "66",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Rabu",
+    "kode_guru": "52",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Rabu",
+    "kode_guru": "42",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Rabu",
+    "kode_guru": "56",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Rabu",
+    "kode_guru": "35.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Kamis",
+    "kode_guru": "49",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Kamis",
+    "kode_guru": "66",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Kamis",
+    "kode_guru": "61",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Kamis",
+    "kode_guru": "48",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Kamis",
+    "kode_guru": "59",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Jumat",
+    "kode_guru": "62.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Jumat",
+    "kode_guru": "61",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Jumat",
+    "kode_guru": "23",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "X - L",
+    "hari": "Jumat",
+    "kode_guru": "49.1",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Senin",
+    "kode_guru": "45",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Senin",
+    "kode_guru": "11",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Senin",
+    "kode_guru": "53",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Senin",
+    "kode_guru": "43.1",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Selasa",
+    "kode_guru": "43.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Selasa",
+    "kode_guru": "13",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Selasa",
+    "kode_guru": "11",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Selasa",
+    "kode_guru": "45",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Selasa",
+    "kode_guru": "57",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Rabu",
+    "kode_guru": "38",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Rabu",
+    "kode_guru": "48.2",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Rabu",
+    "kode_guru": "37.2",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Rabu",
+    "kode_guru": "26",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Rabu",
+    "kode_guru": "67",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Kamis",
+    "kode_guru": "12",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Kamis",
+    "kode_guru": "26",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Kamis",
+    "kode_guru": "28",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Kamis",
+    "kode_guru": "37.2",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Kamis",
+    "kode_guru": "13",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Jumat",
+    "kode_guru": "44",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - A",
+    "hari": "Jumat",
+    "kode_guru": "12",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Senin",
+    "kode_guru": "37.2",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Senin",
+    "kode_guru": "43.1",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Senin",
+    "kode_guru": "11",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Senin",
+    "kode_guru": "53",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Selasa",
+    "kode_guru": "26",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Selasa",
+    "kode_guru": "43.1",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Selasa",
+    "kode_guru": "13",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Selasa",
+    "kode_guru": "11",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Rabu",
+    "kode_guru": "67",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Rabu",
+    "kode_guru": "45",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Rabu",
+    "kode_guru": "28",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Rabu",
+    "kode_guru": "48.2",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Rabu",
+    "kode_guru": "44",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Kamis",
+    "kode_guru": "45",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Kamis",
+    "kode_guru": "13",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Kamis",
+    "kode_guru": "12",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Kamis",
+    "kode_guru": "38",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Kamis",
+    "kode_guru": "57",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Jumat",
+    "kode_guru": "12",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - B",
+    "hari": "Jumat",
+    "kode_guru": "37.2",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Senin",
+    "kode_guru": "10",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Senin",
+    "kode_guru": "13",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Senin",
+    "kode_guru": "45",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Senin",
+    "kode_guru": "11",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Selasa",
+    "kode_guru": "5",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Selasa",
+    "kode_guru": "38",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Selasa",
+    "kode_guru": "44",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Selasa",
+    "kode_guru": "67",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Selasa",
+    "kode_guru": "53",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Rabu",
+    "kode_guru": "26",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Rabu",
+    "kode_guru": "5",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Rabu",
+    "kode_guru": "45",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Rabu",
+    "kode_guru": "10",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Rabu",
+    "kode_guru": "48.2",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Kamis",
+    "kode_guru": "13",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Kamis",
+    "kode_guru": "28",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Kamis",
+    "kode_guru": "11",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Kamis",
+    "kode_guru": "57",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Kamis",
+    "kode_guru": "22",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Jumat",
+    "kode_guru": "22",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - C",
+    "hari": "Jumat",
+    "kode_guru": "44",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Senin",
+    "kode_guru": "22",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Senin",
+    "kode_guru": "38",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Senin",
+    "kode_guru": "10",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Selasa",
+    "kode_guru": "11",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Selasa",
+    "kode_guru": "53",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Selasa",
+    "kode_guru": "44",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Selasa",
+    "kode_guru": "22",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Selasa",
+    "kode_guru": "5",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Selasa",
+    "kode_guru": "13",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Rabu",
+    "kode_guru": "5",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Rabu",
+    "kode_guru": "67",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Rabu",
+    "kode_guru": "44",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Rabu",
+    "kode_guru": "13",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Rabu",
+    "kode_guru": "28",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Kamis",
+    "kode_guru": "48.2",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Kamis",
+    "kode_guru": "45",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Kamis",
+    "kode_guru": "57",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Kamis",
+    "kode_guru": "26",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Kamis",
+    "kode_guru": "11",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Jumat",
+    "kode_guru": "10",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Jumat",
+    "kode_guru": "57",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - D",
+    "hari": "Jumat",
+    "kode_guru": "45",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Senin",
+    "kode_guru": "38",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Senin",
+    "kode_guru": "10",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Senin",
+    "kode_guru": "22",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Selasa",
+    "kode_guru": "13",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Selasa",
+    "kode_guru": "11",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Selasa",
+    "kode_guru": "5",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Selasa",
+    "kode_guru": "53",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Selasa",
+    "kode_guru": "44",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Rabu",
+    "kode_guru": "45",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Rabu",
+    "kode_guru": "10",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Rabu",
+    "kode_guru": "13",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Rabu",
+    "kode_guru": "28",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Rabu",
+    "kode_guru": "5",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Kamis",
+    "kode_guru": "11",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Kamis",
+    "kode_guru": "62.1",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Kamis",
+    "kode_guru": "67",
+    "period_start": 6,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Kamis",
+    "kode_guru": "22",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Kamis",
+    "kode_guru": "26",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Jumat",
+    "kode_guru": "67",
+    "period_start": 1,
+    "period_end": 1
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Jumat",
+    "kode_guru": "45",
+    "period_start": 2,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - E",
+    "hari": "Jumat",
+    "kode_guru": "57",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Senin",
+    "kode_guru": "13.1",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Senin",
+    "kode_guru": "22",
+    "period_start": 6,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Senin",
+    "kode_guru": "40",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Selasa",
+    "kode_guru": "44",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Selasa",
+    "kode_guru": "26",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Selasa",
+    "kode_guru": "45",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Selasa",
+    "kode_guru": "57",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Selasa",
+    "kode_guru": "67",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Rabu",
+    "kode_guru": "40",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Rabu",
+    "kode_guru": "28",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Rabu",
+    "kode_guru": "56",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Rabu",
+    "kode_guru": "38",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Rabu",
+    "kode_guru": "13.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Kamis",
+    "kode_guru": "50.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Kamis",
+    "kode_guru": "26",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Kamis",
+    "kode_guru": "22",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Kamis",
+    "kode_guru": "62.1",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Kamis",
+    "kode_guru": "45",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Kamis",
+    "kode_guru": "56",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Jumat",
+    "kode_guru": "50.1",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - F",
+    "hari": "Jumat",
+    "kode_guru": "53",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Senin",
+    "kode_guru": "56",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Senin",
+    "kode_guru": "45",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Senin",
+    "kode_guru": "26",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Senin",
+    "kode_guru": "50.1",
+    "period_start": 8,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Senin",
+    "kode_guru": "13.1",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Selasa",
+    "kode_guru": "45",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Selasa",
+    "kode_guru": "56",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Selasa",
+    "kode_guru": "28",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Selasa",
+    "kode_guru": "67",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Selasa",
+    "kode_guru": "40",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Selasa",
+    "kode_guru": "26",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Rabu",
+    "kode_guru": "13.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Rabu",
+    "kode_guru": "44",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Rabu",
+    "kode_guru": "14",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Rabu",
+    "kode_guru": "50.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Rabu",
+    "kode_guru": "40",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Kamis",
+    "kode_guru": "22",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Kamis",
+    "kode_guru": "38",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Kamis",
+    "kode_guru": "50.1",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Kamis",
+    "kode_guru": "56",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Kamis",
+    "kode_guru": "62.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Jumat",
+    "kode_guru": "57",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Jumat",
+    "kode_guru": "40",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - G",
+    "hari": "Jumat",
+    "kode_guru": "22",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Senin",
+    "kode_guru": "55",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Senin",
+    "kode_guru": "40",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Senin",
+    "kode_guru": "49.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Senin",
+    "kode_guru": "45",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Selasa",
+    "kode_guru": "28",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Selasa",
+    "kode_guru": "45",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Selasa",
+    "kode_guru": "60.2",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Selasa",
+    "kode_guru": "38",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Selasa",
+    "kode_guru": "40",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Rabu",
+    "kode_guru": "14",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Rabu",
+    "kode_guru": "13",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Rabu",
+    "kode_guru": "26",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Rabu",
+    "kode_guru": "4",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Rabu",
+    "kode_guru": "10",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Kamis",
+    "kode_guru": "57",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Kamis",
+    "kode_guru": "55",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Kamis",
+    "kode_guru": "49.1",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Kamis",
+    "kode_guru": "60.2",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Kamis",
+    "kode_guru": "13",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Kamis",
+    "kode_guru": "67",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Jumat",
+    "kode_guru": "49.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - H",
+    "hari": "Jumat",
+    "kode_guru": "10",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Senin",
+    "kode_guru": "43.1",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Senin",
+    "kode_guru": "49.1",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Senin",
+    "kode_guru": "56",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Senin",
+    "kode_guru": "28",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Selasa",
+    "kode_guru": "66.2",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Selasa",
+    "kode_guru": "56",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Selasa",
+    "kode_guru": "57",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Selasa",
+    "kode_guru": "60",
+    "period_start": 8,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Selasa",
+    "kode_guru": "31",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Rabu",
+    "kode_guru": "37",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Rabu",
+    "kode_guru": "60",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Rabu",
+    "kode_guru": "4",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Rabu",
+    "kode_guru": "63",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Rabu",
+    "kode_guru": "66.2",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Rabu",
+    "kode_guru": "31",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Kamis",
+    "kode_guru": "14",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Kamis",
+    "kode_guru": "37",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Kamis",
+    "kode_guru": "43.1",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Kamis",
+    "kode_guru": "49.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Kamis",
+    "kode_guru": "55",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Jumat",
+    "kode_guru": "55",
+    "period_start": 1,
+    "period_end": 1
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Jumat",
+    "kode_guru": "67",
+    "period_start": 2,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - I",
+    "hari": "Jumat",
+    "kode_guru": "63",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Senin",
+    "kode_guru": "40",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Senin",
+    "kode_guru": "56",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Senin",
+    "kode_guru": "17",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Senin",
+    "kode_guru": "37",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Selasa",
+    "kode_guru": "12",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Selasa",
+    "kode_guru": "40",
+    "period_start": 4,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Selasa",
+    "kode_guru": "17",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Selasa",
+    "kode_guru": "28",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Selasa",
+    "kode_guru": "48",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Rabu",
+    "kode_guru": "59",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Rabu",
+    "kode_guru": "4",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Rabu",
+    "kode_guru": "12",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Rabu",
+    "kode_guru": "31",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Rabu",
+    "kode_guru": "60",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Kamis",
+    "kode_guru": "67",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Kamis",
+    "kode_guru": "56",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Kamis",
+    "kode_guru": "37",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Kamis",
+    "kode_guru": "14",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Kamis",
+    "kode_guru": "31",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Jumat",
+    "kode_guru": "63",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - J",
+    "hari": "Jumat",
+    "kode_guru": "40",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Senin",
+    "kode_guru": "48.1",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Senin",
+    "kode_guru": "37",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Senin",
+    "kode_guru": "28",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Senin",
+    "kode_guru": "56",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Selasa",
+    "kode_guru": "40",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Selasa",
+    "kode_guru": "48.1",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Selasa",
+    "kode_guru": "52",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Selasa",
+    "kode_guru": "12",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Rabu",
+    "kode_guru": "63",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Rabu",
+    "kode_guru": "37",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Rabu",
+    "kode_guru": "40",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Rabu",
+    "kode_guru": "59",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Rabu",
+    "kode_guru": "12",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Kamis",
+    "kode_guru": "56",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Kamis",
+    "kode_guru": "4",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Kamis",
+    "kode_guru": "14",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Kamis",
+    "kode_guru": "67",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Kamis",
+    "kode_guru": "52",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Jumat",
+    "kode_guru": "48.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - K",
+    "hari": "Jumat",
+    "kode_guru": "60",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Senin",
+    "kode_guru": "52",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Senin",
+    "kode_guru": "28",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Senin",
+    "kode_guru": "37",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Senin",
+    "kode_guru": "48.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Selasa",
+    "kode_guru": "48.1",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Selasa",
+    "kode_guru": "12",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Selasa",
+    "kode_guru": "56",
+    "period_start": 6,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Selasa",
+    "kode_guru": "34",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Selasa",
+    "kode_guru": "60",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Rabu",
+    "kode_guru": "12",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Rabu",
+    "kode_guru": "63",
+    "period_start": 4,
+    "period_end": 6
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Rabu",
+    "kode_guru": "34",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Rabu",
+    "kode_guru": "52",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Kamis",
+    "kode_guru": "37",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Kamis",
+    "kode_guru": "14",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Kamis",
+    "kode_guru": "56",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Kamis",
+    "kode_guru": "4",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Kamis",
+    "kode_guru": "48.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Jumat",
+    "kode_guru": "59",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Jumat",
+    "kode_guru": "48.1",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XI - L",
+    "hari": "Jumat",
+    "kode_guru": "67",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Senin",
+    "kode_guru": "3",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Senin",
+    "kode_guru": "47",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Senin",
+    "kode_guru": "19",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Senin",
+    "kode_guru": "5",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Selasa",
+    "kode_guru": "18",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Selasa",
+    "kode_guru": "30",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Selasa",
+    "kode_guru": "39",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Selasa",
+    "kode_guru": "2",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Selasa",
+    "kode_guru": "6",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Selasa",
+    "kode_guru": "16",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Rabu",
+    "kode_guru": "7",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Rabu",
+    "kode_guru": "62",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Rabu",
+    "kode_guru": "8",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Rabu",
+    "kode_guru": "47",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Rabu",
+    "kode_guru": "26.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Kamis",
+    "kode_guru": "6",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Kamis",
+    "kode_guru": "21",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Kamis",
+    "kode_guru": "30",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Kamis",
+    "kode_guru": "2",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Kamis",
+    "kode_guru": "16",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Kamis",
+    "kode_guru": "32",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Jumat",
+    "kode_guru": "2",
+    "period_start": 1,
+    "period_end": 1
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Jumat",
+    "kode_guru": "21",
+    "period_start": 2,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 1",
+    "hari": "Jumat",
+    "kode_guru": "5",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Senin",
+    "kode_guru": "26.1",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Senin",
+    "kode_guru": "3",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Senin",
+    "kode_guru": "32",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Senin",
+    "kode_guru": "2",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Senin",
+    "kode_guru": "17",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Selasa",
+    "kode_guru": "6",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Selasa",
+    "kode_guru": "18",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Selasa",
+    "kode_guru": "30",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Selasa",
+    "kode_guru": "41",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Selasa",
+    "kode_guru": "16",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Selasa",
+    "kode_guru": "2",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Rabu",
+    "kode_guru": "8",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Rabu",
+    "kode_guru": "21",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Rabu",
+    "kode_guru": "7",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Rabu",
+    "kode_guru": "17",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Rabu",
+    "kode_guru": "47",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Kamis",
+    "kode_guru": "19",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Kamis",
+    "kode_guru": "16",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Kamis",
+    "kode_guru": "6",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Kamis",
+    "kode_guru": "62",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Kamis",
+    "kode_guru": "30",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Jumat",
+    "kode_guru": "47",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Jumat",
+    "kode_guru": "2",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 2",
+    "hari": "Jumat",
+    "kode_guru": "21",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Senin",
+    "kode_guru": "19",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Senin",
+    "kode_guru": "30",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Senin",
+    "kode_guru": "26.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Senin",
+    "kode_guru": "18",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Selasa",
+    "kode_guru": "47",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Selasa",
+    "kode_guru": "62",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Selasa",
+    "kode_guru": "6",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Selasa",
+    "kode_guru": "21",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Selasa",
+    "kode_guru": "2",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Selasa",
+    "kode_guru": "66.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Rabu",
+    "kode_guru": "16",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Rabu",
+    "kode_guru": "2",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Rabu",
+    "kode_guru": "47",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Rabu",
+    "kode_guru": "30",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Rabu",
+    "kode_guru": "39",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Rabu",
+    "kode_guru": "21",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Kamis",
+    "kode_guru": "7",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Kamis",
+    "kode_guru": "32",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Kamis",
+    "kode_guru": "3",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Kamis",
+    "kode_guru": "6",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Kamis",
+    "kode_guru": "16",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Jumat",
+    "kode_guru": "8",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Jumat",
+    "kode_guru": "62",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 3",
+    "hari": "Jumat",
+    "kode_guru": "66.1",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Senin",
+    "kode_guru": "6",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Senin",
+    "kode_guru": "26.1",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Senin",
+    "kode_guru": "47",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Senin",
+    "kode_guru": "19",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Selasa",
+    "kode_guru": "2",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Selasa",
+    "kode_guru": "41",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Selasa",
+    "kode_guru": "21",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Selasa",
+    "kode_guru": "16",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Selasa",
+    "kode_guru": "66.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Selasa",
+    "kode_guru": "30",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Rabu",
+    "kode_guru": "18",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Rabu",
+    "kode_guru": "3",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Rabu",
+    "kode_guru": "2",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Rabu",
+    "kode_guru": "16",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Rabu",
+    "kode_guru": "19",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Rabu",
+    "kode_guru": "62",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Kamis",
+    "kode_guru": "21",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Kamis",
+    "kode_guru": "6",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Kamis",
+    "kode_guru": "7",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Kamis",
+    "kode_guru": "30",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Kamis",
+    "kode_guru": "66.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Jumat",
+    "kode_guru": "32",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Jumat",
+    "kode_guru": "8",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 4",
+    "hari": "Jumat",
+    "kode_guru": "47",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Senin",
+    "kode_guru": "47",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Senin",
+    "kode_guru": "6",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Senin",
+    "kode_guru": "3",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Senin",
+    "kode_guru": "39",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Senin",
+    "kode_guru": "26.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Selasa",
+    "kode_guru": "30",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Selasa",
+    "kode_guru": "16",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Selasa",
+    "kode_guru": "7",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Selasa",
+    "kode_guru": "36",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Selasa",
+    "kode_guru": "47",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Rabu",
+    "kode_guru": "2",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Rabu",
+    "kode_guru": "18",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Rabu",
+    "kode_guru": "19",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Rabu",
+    "kode_guru": "6",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Rabu",
+    "kode_guru": "16",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Kamis",
+    "kode_guru": "62",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Kamis",
+    "kode_guru": "30",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Kamis",
+    "kode_guru": "2",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Kamis",
+    "kode_guru": "66.1",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Kamis",
+    "kode_guru": "8",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Kamis",
+    "kode_guru": "36",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Jumat",
+    "kode_guru": "66.1",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 5",
+    "hari": "Jumat",
+    "kode_guru": "32",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Senin",
+    "kode_guru": "18",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Senin",
+    "kode_guru": "16",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Senin",
+    "kode_guru": "39",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Senin",
+    "kode_guru": "6",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Senin",
+    "kode_guru": "47",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Selasa",
+    "kode_guru": "7",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Selasa",
+    "kode_guru": "32",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Selasa",
+    "kode_guru": "15",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Selasa",
+    "kode_guru": "47",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Selasa",
+    "kode_guru": "8",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Rabu",
+    "kode_guru": "19",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Rabu",
+    "kode_guru": "16",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Rabu",
+    "kode_guru": "6",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Rabu",
+    "kode_guru": "36",
+    "period_start": 8,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Rabu",
+    "kode_guru": "30",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Kamis",
+    "kode_guru": "26.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Kamis",
+    "kode_guru": "3",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Kamis",
+    "kode_guru": "15",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Kamis",
+    "kode_guru": "30",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Kamis",
+    "kode_guru": "36",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Kamis",
+    "kode_guru": "60.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Jumat",
+    "kode_guru": "60.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Jumat",
+    "kode_guru": "36",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPA - 6",
+    "hari": "Jumat",
+    "kode_guru": "46",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Senin",
+    "kode_guru": "16",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Senin",
+    "kode_guru": "32",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Senin",
+    "kode_guru": "7",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Senin",
+    "kode_guru": "6",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Selasa",
+    "kode_guru": "46",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Selasa",
+    "kode_guru": "60.1",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Selasa",
+    "kode_guru": "23",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Selasa",
+    "kode_guru": "26.1",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Selasa",
+    "kode_guru": "15",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Selasa",
+    "kode_guru": "36",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Rabu",
+    "kode_guru": "6",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Rabu",
+    "kode_guru": "59",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Rabu",
+    "kode_guru": "3",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Rabu",
+    "kode_guru": "41",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Rabu",
+    "kode_guru": "45.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Rabu",
+    "kode_guru": "37.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Kamis",
+    "kode_guru": "60.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Kamis",
+    "kode_guru": "36",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Kamis",
+    "kode_guru": "45.1",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Kamis",
+    "kode_guru": "15",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Kamis",
+    "kode_guru": "19",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Jumat",
+    "kode_guru": "37.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Jumat",
+    "kode_guru": "16",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 7",
+    "hari": "Jumat",
+    "kode_guru": "23",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Senin",
+    "kode_guru": "7",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Senin",
+    "kode_guru": "35",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Senin",
+    "kode_guru": "16",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Senin",
+    "kode_guru": "32",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Selasa",
+    "kode_guru": "3",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Selasa",
+    "kode_guru": "15",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Selasa",
+    "kode_guru": "41",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Selasa",
+    "kode_guru": "6",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Selasa",
+    "kode_guru": "26.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Selasa",
+    "kode_guru": "35",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Rabu",
+    "kode_guru": "17",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Rabu",
+    "kode_guru": "6",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Rabu",
+    "kode_guru": "36",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Rabu",
+    "kode_guru": "59",
+    "period_start": 7,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Rabu",
+    "kode_guru": "37.1",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Rabu",
+    "kode_guru": "46",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Kamis",
+    "kode_guru": "36",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Kamis",
+    "kode_guru": "15",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Kamis",
+    "kode_guru": "19",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Kamis",
+    "kode_guru": "23",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Kamis",
+    "kode_guru": "37.1",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Jumat",
+    "kode_guru": "16",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Jumat",
+    "kode_guru": "17",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPA - 8",
+    "hari": "Jumat",
+    "kode_guru": "59",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Senin",
+    "kode_guru": "2",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Senin",
+    "kode_guru": "55",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Senin",
+    "kode_guru": "5",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Senin",
+    "kode_guru": "4",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Selasa",
+    "kode_guru": "21",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Selasa",
+    "kode_guru": "23",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Selasa",
+    "kode_guru": "10",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Selasa",
+    "kode_guru": "32",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Selasa",
+    "kode_guru": "41",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Selasa",
+    "kode_guru": "43",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Rabu",
+    "kode_guru": "10",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Rabu",
+    "kode_guru": "46",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Rabu",
+    "kode_guru": "33",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Rabu",
+    "kode_guru": "5",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Rabu",
+    "kode_guru": "52",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Rabu",
+    "kode_guru": "2",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Kamis",
+    "kode_guru": "3",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Kamis",
+    "kode_guru": "43",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Kamis",
+    "kode_guru": "21",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Kamis",
+    "kode_guru": "63",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Kamis",
+    "kode_guru": "33",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Jumat",
+    "kode_guru": "52",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Jumat",
+    "kode_guru": "59",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 1",
+    "hari": "Jumat",
+    "kode_guru": "33",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Senin",
+    "kode_guru": "5",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Senin",
+    "kode_guru": "4",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Senin",
+    "kode_guru": "2",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Senin",
+    "kode_guru": "55",
+    "period_start": 9,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Selasa",
+    "kode_guru": "10",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Selasa",
+    "kode_guru": "3",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Selasa",
+    "kode_guru": "33",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Selasa",
+    "kode_guru": "43",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Selasa",
+    "kode_guru": "32",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Selasa",
+    "kode_guru": "21",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Rabu",
+    "kode_guru": "21",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Rabu",
+    "kode_guru": "25",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Rabu",
+    "kode_guru": "39",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Rabu",
+    "kode_guru": "46",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Rabu",
+    "kode_guru": "43",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Rabu",
+    "kode_guru": "33",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Kamis",
+    "kode_guru": "63",
+    "period_start": 1,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Kamis",
+    "kode_guru": "52",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Kamis",
+    "kode_guru": "59",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Kamis",
+    "kode_guru": "2",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Kamis",
+    "kode_guru": "10",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Jumat",
+    "kode_guru": "5",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Jumat",
+    "kode_guru": "32",
+    "period_start": 3,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPS - 2",
+    "hari": "Jumat",
+    "kode_guru": "52",
+    "period_start": 4,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Senin",
+    "kode_guru": "4",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Senin",
+    "kode_guru": "2",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Senin",
+    "kode_guru": "63",
+    "period_start": 7,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Senin",
+    "kode_guru": "36",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Selasa",
+    "kode_guru": "60.1",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Selasa",
+    "kode_guru": "10",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Selasa",
+    "kode_guru": "34",
+    "period_start": 5,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Selasa",
+    "kode_guru": "46",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Selasa",
+    "kode_guru": "59",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Selasa",
+    "kode_guru": "32",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Rabu",
+    "kode_guru": "3",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Rabu",
+    "kode_guru": "33",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Rabu",
+    "kode_guru": "25",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Rabu",
+    "kode_guru": "60.1",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Rabu",
+    "kode_guru": "31",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Rabu",
+    "kode_guru": "43",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Kamis",
+    "kode_guru": "10",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Kamis",
+    "kode_guru": "33",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Kamis",
+    "kode_guru": "31",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Kamis",
+    "kode_guru": "43",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Kamis",
+    "kode_guru": "2",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Jumat",
+    "kode_guru": "36",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 3",
+    "hari": "Jumat",
+    "kode_guru": "55",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Senin",
+    "kode_guru": "63",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Senin",
+    "kode_guru": "36",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Senin",
+    "kode_guru": "4",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Senin",
+    "kode_guru": "2",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Selasa",
+    "kode_guru": "32",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Selasa",
+    "kode_guru": "17",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Selasa",
+    "kode_guru": "3",
+    "period_start": 5,
+    "period_end": 6
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Selasa",
+    "kode_guru": "10",
+    "period_start": 7,
+    "period_end": 8
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Selasa",
+    "kode_guru": "34",
+    "period_start": 9,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Selasa",
+    "kode_guru": "59",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Rabu",
+    "kode_guru": "33",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Rabu",
+    "kode_guru": "31",
+    "period_start": 3,
+    "period_end": 5
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Rabu",
+    "kode_guru": "43",
+    "period_start": 6,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Rabu",
+    "kode_guru": "25",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Rabu",
+    "kode_guru": "17",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Kamis",
+    "kode_guru": "33",
+    "period_start": 1,
+    "period_end": 2
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Kamis",
+    "kode_guru": "2",
+    "period_start": 3,
+    "period_end": 4
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Kamis",
+    "kode_guru": "55",
+    "period_start": 5,
+    "period_end": 7
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Kamis",
+    "kode_guru": "10",
+    "period_start": 8,
+    "period_end": 9
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Kamis",
+    "kode_guru": "43",
+    "period_start": 10,
+    "period_end": 11
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Jumat",
+    "kode_guru": "31",
+    "period_start": 1,
+    "period_end": 1
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Jumat",
+    "kode_guru": "46",
+    "period_start": 2,
+    "period_end": 3
+  },
+  {
+    "kelas": "XII IPS - 4",
+    "hari": "Jumat",
+    "kode_guru": "36",
+    "period_start": 4,
+    "period_end": 5
+  }
+]

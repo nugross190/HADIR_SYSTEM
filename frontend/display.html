@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HADIR — Kode Verifikasi</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#0C1A12; --accent:#2ECC71; --text:#E8F5EC; --text-2:#7BAF8E; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text);
+  min-height:100vh; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; overflow:hidden;
+}
+.container { text-align:center; width:100%; max-width:600px; padding:40px 20px; }
+.logo { font-size:18px; font-weight:600; letter-spacing:3px; color:var(--text-2); margin-bottom:8px; }
+.school-name { font-size:13px; color:var(--text-2); opacity:.6; margin-bottom:48px; }
+.label { font-size:14px; color:var(--text-2); margin-bottom:16px; letter-spacing:1px; }
+.code-display {
+  font-family:'JetBrains Mono',monospace;
+  font-size:min(20vw,120px); font-weight:700;
+  letter-spacing:16px; color:var(--accent);
+  text-shadow:0 0 40px rgba(46,204,113,.3);
+  padding:24px 0; transition:opacity .3s;
+  min-height:160px; display:flex; align-items:center; justify-content:center;
+}
+.code-display.changing { opacity:.3; }
+.timer-bar {
+  width:80%; max-width:400px; height:4px;
+  background:rgba(255,255,255,.08); border-radius:2px;
+  margin:32px auto 16px; overflow:hidden;
+}
+.timer-fill { height:100%; background:var(--accent); border-radius:2px; transition:width 1s linear; }
+.timer-text { font-family:'JetBrains Mono',monospace; font-size:14px; color:var(--text-2); }
+.status-dot {
+  display:inline-block; width:8px; height:8px; border-radius:50%;
+  background:var(--accent); margin-right:6px; vertical-align:middle;
+  animation:pulse 2s ease infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+.footer { position:fixed; bottom:24px; font-size:12px; color:var(--text-2); opacity:.4; }
+.error { color:#E74C3C; font-size:14px; margin-top:16px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">HADIR</div>
+  <div class="school-name">SMAN 5 Garut — Sistem Presensi Digital</div>
+  <div class="label">KODE VERIFIKASI</div>
+  <div class="code-display" id="code">------</div>
+  <div class="timer-bar"><div class="timer-fill" id="timer-fill"></div></div>
+  <div class="timer-text">
+    <span class="status-dot" id="status-dot"></span>
+    <span id="timer-text">Menghubungkan...</span>
+  </div>
+  <div class="error" id="error"></div>
+</div>
+<div class="footer">Layar ini harus tetap menyala selama jam sekolah</div>
+<script>
+const API = 'http://localhost:8000';
+let currentCode = '';
+async function fetchCode() {
+  try {
+    const r = await fetch(API + '/totp/display');
+    if (!r.ok) throw new Error('Server error');
+    const data = await r.json();
+    const codeEl = document.getElementById('code');
+    const timerFill = document.getElementById('timer-fill');
+    const timerText = document.getElementById('timer-text');
+    document.getElementById('error').textContent = '';
+    document.getElementById('status-dot').style.background = 'var(--accent)';
+    const formatted = data.code.slice(0,3) + ' ' + data.code.slice(3);
+    if (currentCode && currentCode !== data.code) {
+      codeEl.classList.add('changing');
+      setTimeout(() => { codeEl.textContent = formatted; codeEl.classList.remove('changing'); }, 300);
+    } else { codeEl.textContent = formatted; }
+    currentCode = data.code;
+    const remaining = data.seconds_remaining;
+    timerFill.style.width = (remaining/300*100)+'%';
+    timerFill.style.background = remaining<=30 ? '#E74C3C' : remaining<=60 ? '#F39C12' : 'var(--accent)';
+    const min = Math.floor(remaining/60), sec = remaining%60;
+    timerText.textContent = `Berganti dalam ${min}:${String(sec).padStart(2,'0')}`;
+  } catch(e) {
+    document.getElementById('error').textContent = 'Tidak dapat terhubung ke server';
+    document.getElementById('status-dot').style.background = '#E74C3C';
+    document.getElementById('timer-text').textContent = 'Koneksi terputus';
+  }
+}
+fetchCode();
+setInterval(fetchCode, 1000);
+document.addEventListener('click', () => {
+  if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(()=>{});
+});
+</script>
+</body>
+</html>

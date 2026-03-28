@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>HADIR — Sistem Presensi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F6F5F0;
+  --bg-card: #FFFFFF;
+  --bg-active: #EBF5EE;
+  --bg-danger: #FEF0EF;
+  --text: #1A1A18;
+  --text-2: #5C5B57;
+  --text-3: #9C9A92;
+  --border: #E5E3DB;
+  --accent: #1B7A43;
+  --accent-light: #D4EDDB;
+  --accent-dark: #145C32;
+  --danger: #C53030;
+  --danger-light: #FED7D7;
+  --warning: #B7791F;
+  --warning-light: #FEFCBF;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-lg: 0 4px 14px rgba(0,0,0,0.08);
+  --font: 'DM Sans', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100dvh;
+  -webkit-tap-highlight-color: transparent;
+}
+.screen { display: none; min-height: 100dvh; padding: 0 0 32px; }
+.screen.active { display: block; animation: fadeIn .25s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.top-bar {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--accent); color: #fff;
+  padding: 16px 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.top-bar h1 { font-size: 18px; font-weight: 600; letter-spacing: .5px; }
+.top-bar .subtitle { font-size: 12px; opacity: .75; margin-top: 2px; }
+.top-bar .back-btn {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255,255,255,.15); border: none; color: #fff;
+  font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.top-bar .back-btn:active { background: rgba(255,255,255,.3); }
+.top-bar .spacer { flex: 1; }
+.top-bar .badge {
+  background: rgba(255,255,255,.2);
+  padding: 4px 10px; border-radius: 20px;
+  font-size: 11px; font-weight: 500;
+}
+.content { padding: 16px 16px 0; }
+.card {
+  background: var(--bg-card); border-radius: var(--radius);
+  border: 1px solid var(--border); padding: 20px;
+  margin-bottom: 12px; box-shadow: var(--shadow);
+}
+.card-flat {
+  background: var(--bg-card); border-radius: var(--radius);
+  border: 1px solid var(--border); overflow: hidden;
+  margin-bottom: 12px; box-shadow: var(--shadow);
+}
+.section-label {
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 1.2px; color: var(--text-3);
+  padding: 20px 16px 8px;
+}
+.input-group { margin-bottom: 16px; }
+.input-group label {
+  display: block; font-size: 13px; font-weight: 500;
+  color: var(--text-2); margin-bottom: 6px;
+}
+.input-group input, .input-group select {
+  width: 100%; padding: 12px 14px;
+  border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+  font-family: var(--font); font-size: 16px;
+  background: var(--bg); color: var(--text);
+  transition: border-color .15s;
+}
+.input-group input:focus, .input-group select:focus {
+  outline: none; border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+.totp-input {
+  font-family: var(--mono) !important;
+  font-size: 28px !important; text-align: center;
+  letter-spacing: 8px; font-weight: 500;
+}
+.btn {
+  display: block; width: 100%;
+  padding: 14px 20px; border: none; border-radius: var(--radius-sm);
+  font-family: var(--font); font-size: 15px; font-weight: 600;
+  cursor: pointer; transition: all .15s; text-align: center;
+}
+.btn:active { transform: scale(.98); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-primary:disabled { background: var(--text-3); cursor: not-allowed; }
+.btn-outline { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+
+.staff-grid { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 16px; }
+.staff-btn {
+  padding: 16px; background: var(--bg-card);
+  border: 1.5px solid var(--border); border-radius: var(--radius);
+  font-family: var(--font); font-size: 15px; font-weight: 500;
+  cursor: pointer; text-align: left; transition: all .15s;
+  display: flex; align-items: center; gap: 12px;
+}
+.staff-btn:active { transform: scale(.98); }
+.staff-btn .avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--accent-light); color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 16px; flex-shrink: 0;
+}
+.staff-btn.selected { border-color: var(--accent); background: var(--bg-active); }
+
+.slot-item {
+  padding: 14px 16px; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background .1s;
+  display: flex; align-items: center; gap: 12px;
+}
+.slot-item:last-child { border-bottom: none; }
+.slot-item:active { background: var(--bg-active); }
+.slot-item.recorded { opacity: .45; pointer-events: none; }
+.slot-period {
+  font-family: var(--mono); font-size: 13px; font-weight: 500;
+  color: var(--accent); background: var(--accent-light);
+  padding: 4px 8px; border-radius: 6px; white-space: nowrap;
+}
+.slot-info { flex: 1; min-width: 0; }
+.slot-teacher { font-weight: 500; font-size: 14px; }
+.slot-subject { font-size: 12px; color: var(--text-2); margin-top: 2px; }
+.slot-check { color: var(--accent); font-size: 18px; }
+
+.status-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.status-btn {
+  padding: 14px 12px; border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border); background: var(--bg-card);
+  font-family: var(--font); font-size: 13px; font-weight: 500;
+  cursor: pointer; text-align: center; transition: all .15s;
+}
+.status-btn:active { transform: scale(.97); }
+.status-btn.selected { border-color: var(--accent); background: var(--bg-active); color: var(--accent); }
+.status-btn[data-status="tidak_hadir"].selected,
+.status-btn[data-status="alpa"].selected { border-color: var(--danger); background: var(--bg-danger); color: var(--danger); }
+.status-btn[data-status="sakit"].selected,
+.status-btn[data-status="izin"].selected { border-color: var(--warning); background: var(--warning-light); color: var(--warning); }
+
+.student-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 16px; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background .1s; user-select: none;
+}
+.student-row:last-child { border-bottom: none; }
+.student-row:active { background: #f0f0ec; }
+.student-num {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-3); width: 24px; text-align: right; flex-shrink: 0;
+}
+.student-name { flex: 1; font-size: 14px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.student-status-pill {
+  font-size: 11px; font-weight: 600; padding: 4px 10px;
+  border-radius: 20px; white-space: nowrap; flex-shrink: 0; transition: all .15s;
+}
+.student-status-pill[data-s="hadir"] { background: var(--accent-light); color: var(--accent-dark); }
+.student-status-pill[data-s="tidak_hadir"] { background: var(--danger-light); color: var(--danger); }
+.student-status-pill[data-s="sakit"] { background: var(--warning-light); color: var(--warning); }
+.student-status-pill[data-s="izin"] { background: #E9D8FD; color: #6B46C1; }
+.student-status-pill[data-s="alpa"] { background: var(--danger-light); color: var(--danger); }
+
+.student-filter {
+  display: flex; gap: 6px; padding: 12px 16px;
+  border-bottom: 1px solid var(--border); overflow-x: auto;
+}
+.filter-chip {
+  padding: 6px 12px; border-radius: 20px;
+  font-size: 12px; font-weight: 500;
+  border: 1px solid var(--border); background: var(--bg-card);
+  cursor: pointer; white-space: nowrap; flex-shrink: 0; font-family: var(--font);
+}
+.filter-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.modal-overlay {
+  display: none; position: fixed; inset: 0; z-index: 100;
+  background: rgba(0,0,0,.4); align-items: flex-end; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal-sheet {
+  background: var(--bg-card); border-radius: 20px 20px 0 0;
+  width: 100%; max-width: 500px; padding: 20px 16px 32px;
+  animation: slideUp .2s ease;
+}
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.modal-handle { width: 36px; height: 4px; background: var(--border); border-radius: 2px; margin: 0 auto 16px; }
+.modal-title { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 16px; }
+
+.summary-stat {
+  display: flex; justify-content: space-between;
+  padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px;
+}
+.summary-stat:last-child { border-bottom: none; }
+.summary-stat .label { color: var(--text-2); }
+.summary-stat .value { font-weight: 600; }
+
+.toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+  background: var(--text); color: #fff;
+  padding: 12px 20px; border-radius: 10px;
+  font-size: 14px; font-weight: 500;
+  box-shadow: var(--shadow-lg); z-index: 200;
+  animation: toastIn .3s ease; pointer-events: none;
+}
+@keyframes toastIn { from { opacity: 0; transform: translateX(-50%) translateY(20px); } }
+
+.empty-state { text-align: center; padding: 40px 20px; color: var(--text-3); }
+.empty-state .icon { font-size: 40px; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<div id="screen-login" class="screen active">
+  <div class="top-bar">
+    <div><h1>HADIR</h1><div class="subtitle">Sistem Presensi SMAN 5 Garut</div></div>
+  </div>
+  <div class="section-label">Pilih akun</div>
+  <div id="staff-list" class="staff-grid"></div>
+  <div class="content" id="pin-section" style="display:none">
+    <div class="input-group">
+      <label>Masukkan PIN</label>
+      <input type="password" id="pin-input" inputmode="numeric" maxlength="6" placeholder="••••">
+    </div>
+    <button class="btn btn-primary" onclick="doLogin()">Masuk</button>
+  </div>
+</div>
+
+<div id="screen-totp" class="screen">
+  <div class="top-bar">
+    <button class="back-btn" onclick="goTo('login')">←</button>
+    <div><h1>Verifikasi Kehadiran</h1><div class="subtitle" id="totp-staff-name"></div></div>
+  </div>
+  <div class="content">
+    <div class="card" style="text-align:center">
+      <p style="font-size:13px;color:var(--text-2);margin-bottom:16px">Masukkan kode 6 digit dari layar sekolah</p>
+      <div class="input-group" style="max-width:260px;margin:0 auto">
+        <input type="text" id="totp-input" class="totp-input" inputmode="numeric" maxlength="6" placeholder="••••••" autocomplete="off">
+      </div>
+      <button class="btn btn-primary" onclick="doVerifyTotp()" style="margin-top:8px">Verifikasi</button>
+    </div>
+  </div>
+</div>
+
+<div id="screen-schedule" class="screen">
+  <div class="top-bar">
+    <button class="back-btn" onclick="confirmExit()">←</button>
+    <div><h1>Pilih Kelas</h1><div class="subtitle" id="sched-info"></div></div>
+    <div class="spacer"></div>
+    <button class="back-btn" style="font-size:14px" onclick="doCompleteSession()">✓</button>
+  </div>
+  <div class="content">
+    <div class="input-group">
+      <label>Tanggal</label>
+      <input type="date" id="date-select" onchange="onDateChange()">
+    </div>
+    <div class="input-group">
+      <select id="class-select" onchange="loadSlots()">
+        <option value="">— Pilih kelas —</option>
+      </select>
+    </div>
+  </div>
+  <div id="slots-container"></div>
+</div>
+
+<div id="screen-teacher" class="screen">
+  <div class="top-bar">
+    <button class="back-btn" onclick="goTo('schedule')">←</button>
+    <div><h1 id="teacher-class-name"></h1><div class="subtitle" id="teacher-slot-info"></div></div>
+  </div>
+  <div class="content">
+    <div class="card">
+      <div style="font-size:13px;color:var(--text-2);margin-bottom:4px">Guru pengajar</div>
+      <div style="font-size:18px;font-weight:600;margin-bottom:4px" id="teacher-name-display"></div>
+      <div style="font-size:13px;color:var(--text-2)" id="teacher-subject-display"></div>
+    </div>
+    <div class="section-label" style="padding-left:0">Status kehadiran guru</div>
+    <div class="status-grid" id="teacher-status-grid"></div>
+    <div class="input-group" style="margin-top:16px">
+      <label>Catatan (opsional)</label>
+      <input type="text" id="teacher-notes" placeholder="contoh: pulang lebih awal">
+    </div>
+    <button class="btn btn-primary" id="btn-to-students" onclick="goToStudents()" disabled>Lanjut ke Siswa →</button>
+  </div>
+</div>
+
+<div id="screen-students" class="screen">
+  <div class="top-bar">
+    <button class="back-btn" onclick="goTo('teacher')">←</button>
+    <div><h1 id="students-class-name"></h1><div class="subtitle" id="students-count-info"></div></div>
+    <div class="spacer"></div>
+    <div class="badge" id="absent-badge">0 absen</div>
+  </div>
+  <div id="students-filter-bar"></div>
+  <div id="students-list-container" class="card-flat" style="margin:0 16px 16px"></div>
+  <div class="content">
+    <button class="btn btn-primary" onclick="doSubmitAttendance()">Simpan Presensi</button>
+  </div>
+</div>
+
+<div id="screen-done" class="screen">
+  <div class="top-bar"><div><h1>Sesi Selesai</h1></div></div>
+  <div class="content">
+    <div class="card" id="session-summary"></div>
+    <button class="btn btn-primary" onclick="goTo('login')" style="margin-top:12px">Kembali ke Login</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="status-modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="modal-student-name"></div>
+    <div class="status-grid" id="modal-status-grid"></div>
+  </div>
+</div>
+
+<script>
+const API = 'http://localhost:8000';
+const DAYS_ID = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+const TEACHER_STATUSES = [
+  {key:'hadir',label:'Hadir'},{key:'tidak_hadir',label:'Tidak Hadir'},
+  {key:'terlambat',label:'Terlambat'},{key:'sakit',label:'Sakit'},{key:'izin',label:'Izin'},
+];
+const STUDENT_STATUSES = [
+  {key:'hadir',label:'Hadir'},{key:'tidak_hadir',label:'Tidak Hadir'},
+  {key:'sakit',label:'Sakit'},{key:'izin',label:'Izin'},{key:'alpa',label:'Alpa'},
+];
+
+let state = {
+  staffId:null, staffName:'', recordingSessionId:null,
+  selectedSlot:null, teacherStatus:null, teacherNotes:'',
+  students:[], recordedSlots:[], classes:[],
+};
+
+async function api(method, path, body) {
+  const opts = {method, headers:{'Content-Type':'application/json'}};
+  if (body) opts.body = JSON.stringify(body);
+  const r = await fetch(API + path, opts);
+  if (!r.ok) {
+    const err = await r.json().catch(() => ({detail:'Request failed'}));
+    throw new Error(err.detail || 'Request failed');
+  }
+  return r.json();
+}
+function goTo(screen) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + screen).classList.add('active');
+  window.scrollTo(0, 0);
+}
+function toast(msg, dur=2500) {
+  const t = document.createElement('div'); t.className='toast'; t.textContent=msg;
+  document.body.appendChild(t); setTimeout(() => t.remove(), dur);
+}
+function todayStr() {
+  const d=new Date();
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+}
+function todayDay() { return DAYS_ID[new Date().getDay()]; }
+function selectedDate() {
+  return document.getElementById('date-select').value || todayStr();
+}
+function selectedDay() {
+  const d = new Date(document.getElementById('date-select').value || todayStr());
+  return DAYS_ID[d.getDay()];
+}
+function onDateChange() {
+  const day = selectedDay();
+  if (day === 'Minggu' || day === 'Sabtu') {
+    toast('Hari ' + day + ' bukan hari sekolah');
+  }
+  document.getElementById('sched-info').textContent =
+    `${state.staffName} · ${day}, ${selectedDate()}`;
+  loadSlots();
+}
+
+async function loadStaff() {
+  try {
+    const staff = await api('GET', '/auth/staff');
+    document.getElementById('staff-list').innerHTML = staff.map(s => `
+      <button class="staff-btn" onclick="selectStaff(${s.staff_id}, '${s.name}')">
+        <div class="avatar">${s.name.charAt(0)}</div><div>${s.name}</div>
+      </button>`).join('');
+  } catch(e) {
+    document.getElementById('staff-list').innerHTML = `
+      <div class="empty-state"><div class="icon">⚠</div>
+      <div>Tidak dapat terhubung ke server</div>
+      <div style="font-size:12px;margin-top:4px">${API}</div></div>`;
+  }
+}
+function selectStaff(id, name) {
+  state.staffId=id; state.staffName=name;
+  document.querySelectorAll('.staff-btn').forEach(b => b.classList.remove('selected'));
+  event.currentTarget.classList.add('selected');
+  document.getElementById('pin-section').style.display='block';
+  document.getElementById('pin-input').focus();
+}
+async function doLogin() {
+  const pin = document.getElementById('pin-input').value;
+  if (!pin) return toast('Masukkan PIN');
+  try {
+    await api('POST', '/auth/login', {staff_id:state.staffId, pin});
+    document.getElementById('totp-staff-name').textContent = state.staffName;
+    goTo('totp');
+    document.getElementById('totp-input').value='';
+    document.getElementById('totp-input').focus();
+  } catch(e) { toast(e.message); }
+}
+
+async function doVerifyTotp() {
+  const code = document.getElementById('totp-input').value;
+  if (code.length !== 6) return toast('Kode harus 6 digit');
+  try {
+    const result = await api('POST', '/attendance/session/start', {staff_id:state.staffId, totp_code:code});
+    state.recordingSessionId = result.recording_session_id;
+    state.recordedSlots = [];
+    await loadClasses();
+    document.getElementById('date-select').value = todayStr();
+    document.getElementById('sched-info').textContent = `${state.staffName} · ${selectedDay()}, ${selectedDate()}`;
+    goTo('schedule');
+  } catch(e) { toast(e.message); }
+}
+
+async function loadClasses() {
+  try {
+    state.classes = await api('GET', '/classes');
+    const sel = document.getElementById('class-select');
+    sel.innerHTML = '<option value="">— Pilih kelas —</option>' +
+      state.classes.map(c => `<option value="${c.id}">${c.name} (${c.student_count} siswa)</option>`).join('');
+  } catch(e) { toast('Gagal memuat daftar kelas'); }
+}
+async function loadSlots() {
+  const classId = document.getElementById('class-select').value;
+  const container = document.getElementById('slots-container');
+  if (!classId) { container.innerHTML=''; return; }
+  try {
+    const day = selectedDay();
+    const slots = await api('GET', `/attendance/schedule?day=${day}&class_id=${classId}`);
+    if (slots.length === 0) {
+      container.innerHTML = '<div class="empty-state"><div class="icon">📋</div><div>Tidak ada jadwal hari ini</div></div>';
+      return;
+    }
+    container.innerHTML = `<div class="card-flat" style="margin:0 16px">` +
+      slots.map(s => {
+        const rec = state.recordedSlots.includes(s.slot_id);
+        return `<div class="slot-item ${rec?'recorded':''}" onclick='selectSlot(${JSON.stringify(s)})'>
+          <div class="slot-period">JP ${s.period_start}${s.period_end!==s.period_start?'-'+s.period_end:''}</div>
+          <div class="slot-info"><div class="slot-teacher">${s.teacher_name}</div>
+          <div class="slot-subject">${s.subject||'-'}</div></div>
+          ${rec?'<div class="slot-check">✓</div>':''}</div>`;
+      }).join('') + '</div>';
+  } catch(e) { container.innerHTML='<div class="empty-state">Gagal memuat jadwal</div>'; }
+}
+function selectSlot(slot) {
+  if (state.recordedSlots.includes(slot.slot_id)) return;
+  state.selectedSlot = slot;
+  state.teacherStatus = null; state.teacherNotes = '';
+  document.getElementById('teacher-class-name').textContent = slot.class_name;
+  document.getElementById('teacher-slot-info').textContent =
+    `JP ${slot.period_start}${slot.period_end!==slot.period_start?'-'+slot.period_end:''} · ${slot.subject||''}`;
+  document.getElementById('teacher-name-display').textContent = slot.teacher_name;
+  document.getElementById('teacher-subject-display').textContent = slot.subject || '';
+  document.getElementById('teacher-notes').value = '';
+  document.getElementById('btn-to-students').disabled = true;
+  document.getElementById('teacher-status-grid').innerHTML = TEACHER_STATUSES.map(s =>
+    `<button class="status-btn" data-status="${s.key}" onclick="pickTeacherStatus('${s.key}')">${s.label}</button>`
+  ).join('');
+  goTo('teacher');
+}
+function pickTeacherStatus(status) {
+  state.teacherStatus = status;
+  document.querySelectorAll('#teacher-status-grid .status-btn').forEach(b =>
+    b.classList.toggle('selected', b.dataset.status === status));
+  document.getElementById('btn-to-students').disabled = false;
+}
+
+async function goToStudents() {
+  state.teacherNotes = document.getElementById('teacher-notes').value;
+  try {
+    const students = await api('GET', `/attendance/class/${state.selectedSlot.class_id}/students`);
+    state.students = students.map(s => ({...s, status:'hadir'}));
+    renderStudents();
+    document.getElementById('students-class-name').textContent = state.selectedSlot.class_name;
+    updateAbsentBadge();
+    goTo('students');
+  } catch(e) { toast('Gagal memuat daftar siswa'); }
+}
+function renderStudents(filter='all') {
+  const list = filter==='all' ? state.students : state.students.filter(s => s.status===filter);
+  const counts = {};
+  state.students.forEach(s => counts[s.status] = (counts[s.status]||0)+1);
+  document.getElementById('students-filter-bar').innerHTML = `
+    <div class="student-filter">
+      <button class="filter-chip ${filter==='all'?'active':''}" onclick="renderStudents('all')">Semua (${state.students.length})</button>
+      ${STUDENT_STATUSES.map(st => counts[st.key] ?
+        `<button class="filter-chip ${filter===st.key?'active':''}" onclick="renderStudents('${st.key}')">${st.label} (${counts[st.key]})</button>` : ''
+      ).join('')}
+    </div>`;
+  document.getElementById('students-list-container').innerHTML = list.map(s => {
+    const idx = state.students.indexOf(s)+1;
+    return `<div class="student-row" onclick="openStatusPicker(${s.student_id})">
+      <div class="student-num">${idx}</div>
+      <div class="student-name">${s.name}</div>
+      <div class="student-status-pill" data-s="${s.status}">${statusLabel(s.status)}</div></div>`;
+  }).join('');
+  document.getElementById('students-count-info').textContent = `${state.students.length} siswa · tap untuk ubah status`;
+}
+function statusLabel(k) { return {hadir:'Hadir',tidak_hadir:'Tidak Hadir',sakit:'Sakit',izin:'Izin',alpa:'Alpa'}[k]||k; }
+function updateAbsentBadge() {
+  const n = state.students.filter(s => s.status!=='hadir').length;
+  document.getElementById('absent-badge').textContent = n+' absen';
+}
+function openStatusPicker(studentId) {
+  const s = state.students.find(x => x.student_id===studentId);
+  if (!s) return;
+  document.getElementById('modal-student-name').textContent = s.name;
+  document.getElementById('modal-status-grid').innerHTML = STUDENT_STATUSES.map(st =>
+    `<button class="status-btn ${s.status===st.key?'selected':''}" data-status="${st.key}"
+      onclick="setStudentStatus(${studentId},'${st.key}')">${st.label}</button>`
+  ).join('');
+  document.getElementById('status-modal').classList.add('open');
+}
+function setStudentStatus(id, status) {
+  const s = state.students.find(x => x.student_id===id);
+  if (s) s.status = status;
+  document.getElementById('status-modal').classList.remove('open');
+  renderStudents(); updateAbsentBadge();
+}
+document.getElementById('status-modal').addEventListener('click', function(e) {
+  if (e.target===this) this.classList.remove('open');
+});
+
+async function doSubmitAttendance() {
+  try {
+    await api('POST', '/attendance/record', {
+      recording_session_id: state.recordingSessionId,
+      schedule_slot_id: state.selectedSlot.slot_id,
+      date: selectedDate(),
+      teacher_status: state.teacherStatus,
+      teacher_notes: state.teacherNotes || null,
+      student_statuses: state.students.map(s => ({student_id:s.student_id, status:s.status})),
+    });
+    state.recordedSlots.push(state.selectedSlot.slot_id);
+    toast('Presensi tersimpan ✓');
+    loadSlots(); goTo('schedule');
+  } catch(e) { toast(e.message); }
+}
+async function doCompleteSession() {
+  if (state.recordedSlots.length===0 && !confirm('Belum ada presensi. Yakin selesai?')) return;
+  try {
+    const result = await api('POST', `/attendance/session/${state.recordingSessionId}/complete`);
+    document.getElementById('session-summary').innerHTML = `
+      <div style="text-align:center;margin-bottom:16px">
+        <div style="font-size:40px;margin-bottom:8px">✓</div>
+        <div style="font-size:18px;font-weight:600">Sesi Selesai</div></div>
+      <div class="summary-stat"><span class="label">Staff</span><span class="value">${state.staffName}</span></div>
+      <div class="summary-stat"><span class="label">Kelas direkam</span><span class="value">${result.sessions_recorded} sesi</span></div>
+      <div class="summary-stat"><span class="label">Selesai</span><span class="value">${new Date(result.completed_at).toLocaleTimeString('id-ID')}</span></div>`;
+    goTo('done');
+  } catch(e) { toast(e.message); }
+}
+function confirmExit() {
+  if (state.recordedSlots.length>0 && !confirm('Sesi masih aktif. Yakin keluar?')) return;
+  goTo('login'); resetState();
+}
+function resetState() {
+  state = {staffId:null,staffName:'',recordingSessionId:null,selectedSlot:null,
+    teacherStatus:null,teacherNotes:'',students:[],recordedSlots:[],classes:[]};
+  document.getElementById('pin-input').value='';
+  document.getElementById('pin-section').style.display='none';
+  document.querySelectorAll('.staff-btn').forEach(b => b.classList.remove('selected'));
+}
+
+loadStaff();
+document.getElementById('pin-input').addEventListener('keydown', e => {if(e.key==='Enter') doLogin();});
+document.getElementById('totp-input').addEventListener('keydown', e => {if(e.key==='Enter') doVerifyTotp();});
+</script>
+</body>
+</html>
