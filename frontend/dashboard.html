@@ -991,12 +991,19 @@ function renderStudentList(data) {
     return;
   }
 
-  list.innerHTML = data.students.map((s, i) => `
+  list.innerHTML = `<div class="kel-row" style="background:var(--bg);cursor:default;font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.8px;padding:10px 16px">
+      <div class="kel-num">No.</div>
+      <div style="width:72px;flex-shrink:0">NIS</div>
+      <div style="width:72px;flex-shrink:0">NISN</div>
+      <div class="kel-name">Nama</div>
+      <div style="width:30px;text-align:center;flex-shrink:0">L/P</div>
+    </div>` + data.students.map((s, i) => `
     <div class="kel-row ${s.is_active ? '' : 'inactive'}" onclick="openEditStudent(${s.id})">
       <div class="kel-num">${i + 1}</div>
+      <div style="width:72px;flex-shrink:0;font-family:var(--mono);font-size:12px;color:var(--text-2)">${s.nis}</div>
+      <div style="width:72px;flex-shrink:0;font-family:var(--mono);font-size:12px;color:var(--text-3)">${s.nisn || '—'}</div>
       <div class="kel-name">${s.name}${s.is_active ? '' : ' <span style="font-size:10px;color:var(--danger)">(nonaktif)</span>'}</div>
-      <div class="kel-nis">${s.nis}</div>
-      ${s.gender ? `<div class="kel-gender ${s.gender}">${s.gender}</div>` : ''}
+      <div style="width:30px;text-align:center;flex-shrink:0">${s.gender ? `<span class="kel-gender ${s.gender}">${s.gender}</span>` : ''}</div>
     </div>
   `).join('');
 }
