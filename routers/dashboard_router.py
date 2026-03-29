@@ -130,12 +130,13 @@ def class_stats(
 
     result = []
     for c in classes:
-        # Get attendance sessions for this class on this date
+        # Get attendance sessions via ScheduleSlot (no direct class_id on AttendanceSession)
         sessions = (
             db.query(AttendanceSession)
+            .join(ScheduleSlot)
             .filter(
                 AttendanceSession.date == target_date,
-                AttendanceSession.class_id == c.id,
+                ScheduleSlot.class_id == c.id,
             )
             .all()
         )
