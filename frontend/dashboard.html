@@ -289,6 +289,43 @@ body {
 @keyframes spin { to { transform: rotate(360deg); } }
 .empty-state { text-align: center; padding: 40px 20px; color: var(--text-3); }
 .empty-state .icon { font-size: 40px; margin-bottom: 8px; }
+
+/* ── Modal ────────────────────────────────────── */
+.modal-overlay {
+  display: none; position: fixed; inset: 0; z-index: 100;
+  background: rgba(0,0,0,.4); align-items: flex-end; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal-sheet {
+  background: var(--bg-card); border-radius: 20px 20px 0 0;
+  width: 100%; max-width: 500px; padding: 20px 16px 32px;
+  animation: slideUp .2s ease;
+}
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.modal-handle { width: 36px; height: 4px; background: var(--border); border-radius: 2px; margin: 0 auto 16px; }
+.modal-title { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 16px; }
+
+/* ── Kelola Student Row ──────────────────────── */
+.kel-row {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background .1s; user-select: none;
+}
+.kel-row:last-child { border-bottom: none; }
+.kel-row:active { background: var(--bg-active); }
+.kel-row.inactive { opacity: .45; }
+.kel-num {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-3); width: 24px; text-align: right; flex-shrink: 0;
+}
+.kel-name { flex: 1; font-size: 14px; font-weight: 500; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.kel-nis { font-size: 11px; font-family: var(--mono); color: var(--text-3); }
+.kel-gender {
+  font-size: 10px; font-weight: 600; padding: 2px 8px;
+  border-radius: 12px; white-space: nowrap;
+}
+.kel-gender.L { background: var(--info-light); color: var(--info); }
+.kel-gender.P { background: var(--purple-light); color: var(--purple); }
 </style>
 </head>
 <body>
@@ -305,6 +342,7 @@ body {
   <button class="tab-btn active" onclick="switchTab('overview')">Ringkasan</button>
   <button class="tab-btn" onclick="switchTab('classes')">Per Kelas</button>
   <button class="tab-btn" onclick="switchTab('reports')">Laporan</button>
+  <button class="tab-btn" onclick="switchTab('kelola')">Kelola</button>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
@@ -492,6 +530,112 @@ body {
 
 </div>
 
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- TAB 4: KELOLA SISWA                                                    -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<div id="tab-kelola" class="tab-panel">
+
+  <!-- Class selector -->
+  <div class="card" style="padding:16px 20px">
+    <div class="card-title" style="margin-bottom:10px">Kelola Siswa</div>
+    <select id="kelola-class-select" onchange="loadStudentList()" style="
+      width:100%; padding:10px 12px; border:1.5px solid var(--border);
+      border-radius:var(--radius-sm); font-family:var(--font); font-size:14px;
+      background:var(--bg); color:var(--text);
+    ">
+      <option value="">— Pilih kelas —</option>
+    </select>
+    <label style="display:flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;color:var(--text-2);cursor:pointer">
+      <input type="checkbox" id="kelola-show-inactive" onchange="loadStudentList()"> Tampilkan siswa nonaktif
+    </label>
+  </div>
+
+  <!-- Student count + add button -->
+  <div id="kelola-toolbar" style="display:none;padding:0 4px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+      <div style="font-size:13px;color:var(--text-2)" id="kelola-count"></div>
+      <button class="btn btn-primary btn-sm" style="width:auto;padding:8px 14px;font-size:12px" onclick="openAddStudent()">+ Tambah Siswa</button>
+    </div>
+  </div>
+
+  <!-- Student list -->
+  <div id="kelola-loading" class="loading" style="display:none"><div class="spinner"></div>Memuat data...</div>
+  <div id="kelola-list" class="card-flat" style="display:none"></div>
+  <div id="kelola-empty" class="empty-state" style="display:none">
+    <div class="icon">👨‍🎓</div>
+    <div>Pilih kelas untuk melihat daftar siswa</div>
+  </div>
+</div>
+
+<!-- ═══════════════ EDIT STUDENT MODAL ═══════════════ -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal-sheet" style="max-width:500px">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="edit-modal-title">Edit Siswa</div>
+    <div style="padding:0 4px">
+      <div class="report-field" style="margin-bottom:10px">
+        <label>Nama</label>
+        <input type="text" id="edit-name" placeholder="Nama lengkap">
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+        <div class="report-field">
+          <label>NIS</label>
+          <input type="text" id="edit-nis" placeholder="NIS">
+        </div>
+        <div class="report-field">
+          <label>NISN</label>
+          <input type="text" id="edit-nisn" placeholder="NISN (opsional)">
+        </div>
+      </div>
+      <div class="report-field" style="margin-bottom:14px">
+        <label>Jenis Kelamin</label>
+        <select id="edit-gender" style="
+          width:100%; padding:10px 12px; border:1.5px solid var(--border);
+          border-radius:var(--radius-sm); font-family:var(--font); font-size:14px;
+          background:var(--bg); color:var(--text);
+        ">
+          <option value="">—</option>
+          <option value="L">Laki-laki</option>
+          <option value="P">Perempuan</option>
+        </select>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-primary btn-sm" style="flex:1" onclick="saveStudent()">Simpan</button>
+        <button class="btn btn-outline btn-sm" style="flex:1" onclick="closeEditModal()">Batal</button>
+      </div>
+      <div id="edit-actions" style="margin-top:10px;display:none">
+        <div style="border-top:1px solid var(--border);padding-top:10px;display:flex;gap:8px">
+          <button class="btn btn-sm" style="flex:1;background:var(--warning-light);color:var(--warning)" onclick="openMoveStudent()">Pindah Kelas</button>
+          <button class="btn btn-sm" id="edit-toggle-btn" style="flex:1" onclick="toggleStudentActive()">Nonaktifkan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MOVE STUDENT MODAL ═══════════════ -->
+<div class="modal-overlay" id="move-modal">
+  <div class="modal-sheet" style="max-width:500px">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Pindah Kelas</div>
+    <div style="padding:0 4px">
+      <div style="font-size:13px;color:var(--text-2);margin-bottom:12px" id="move-info"></div>
+      <div class="report-field" style="margin-bottom:14px">
+        <label>Kelas Tujuan</label>
+        <select id="move-class-select" style="
+          width:100%; padding:10px 12px; border:1.5px solid var(--border);
+          border-radius:var(--radius-sm); font-family:var(--font); font-size:14px;
+          background:var(--bg); color:var(--text);
+        "></select>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-primary btn-sm" style="flex:1" onclick="confirmMoveStudent()">Pindahkan</button>
+        <button class="btn btn-outline btn-sm" style="flex:1" onclick="closeMoveModal()">Batal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 const API = '';
 const DAYS_ID = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
@@ -528,7 +672,7 @@ async function apiFetch(path) {
 function switchTab(tab) {
   document.querySelectorAll('.tab-btn').forEach((b, i) => {
     b.classList.toggle('active', b.textContent.trim() === {
-      overview:'Ringkasan', classes:'Per Kelas', reports:'Laporan'
+      overview:'Ringkasan', classes:'Per Kelas', reports:'Laporan', kelola:'Kelola'
     }[tab]);
   });
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
@@ -536,6 +680,7 @@ function switchTab(tab) {
 
   if (tab === 'classes' && !classesLoaded) loadClassStats();
   if (tab === 'reports' && !reportsInit) initReports();
+  if (tab === 'kelola' && !kelolaInit) initKelola();
 }
 
 // ── DASHBOARD TAB ───────────────────────────────────────────────────────────
@@ -784,6 +929,236 @@ function downloadReport(type) {
   a.download = '';
   a.click();
   toast('Mengunduh laporan...');
+}
+
+// ── KELOLA SISWA TAB ────────────────────────────────────────────────────────
+
+let kelolaInit = false;
+let kelolaClasses = [];
+let kelolaStudents = [];
+let editingStudent = null;  // null = adding new, object = editing existing
+
+async function initKelola() {
+  kelolaInit = true;
+  try {
+    kelolaClasses = await apiFetch('/classes');
+    const sel = document.getElementById('kelola-class-select');
+    sel.innerHTML = '<option value="">— Pilih kelas —</option>' +
+      kelolaClasses.map(c => `<option value="${c.id}">${c.name} (${c.student_count} siswa)</option>`).join('');
+  } catch(e) {
+    toast('Gagal memuat daftar kelas');
+  }
+}
+
+async function loadStudentList() {
+  const classId = document.getElementById('kelola-class-select').value;
+  const showInactive = document.getElementById('kelola-show-inactive').checked;
+
+  if (!classId) {
+    document.getElementById('kelola-list').style.display = 'none';
+    document.getElementById('kelola-toolbar').style.display = 'none';
+    document.getElementById('kelola-empty').style.display = 'block';
+    document.getElementById('kelola-loading').style.display = 'none';
+    return;
+  }
+
+  document.getElementById('kelola-empty').style.display = 'none';
+  document.getElementById('kelola-list').style.display = 'none';
+  document.getElementById('kelola-toolbar').style.display = 'none';
+  document.getElementById('kelola-loading').style.display = 'block';
+
+  try {
+    const data = await apiFetch(`/students/by-class/${classId}?include_inactive=${showInactive}`);
+    kelolaStudents = data.students;
+    renderStudentList(data);
+
+    document.getElementById('kelola-loading').style.display = 'none';
+    document.getElementById('kelola-list').style.display = 'block';
+    document.getElementById('kelola-toolbar').style.display = 'block';
+  } catch(e) {
+    document.getElementById('kelola-loading').innerHTML =
+      '<div class="empty-state"><div class="icon">⚠</div><div>Gagal memuat data siswa</div></div>';
+  }
+}
+
+function renderStudentList(data) {
+  document.getElementById('kelola-count').textContent =
+    `${data.class_name} — ${data.total} siswa`;
+
+  const list = document.getElementById('kelola-list');
+  if (data.students.length === 0) {
+    list.innerHTML = '<div class="empty-state" style="padding:30px 20px"><div style="font-size:13px">Tidak ada siswa di kelas ini</div></div>';
+    return;
+  }
+
+  list.innerHTML = data.students.map((s, i) => `
+    <div class="kel-row ${s.is_active ? '' : 'inactive'}" onclick="openEditStudent(${s.id})">
+      <div class="kel-num">${i + 1}</div>
+      <div class="kel-name">${s.name}${s.is_active ? '' : ' <span style="font-size:10px;color:var(--danger)">(nonaktif)</span>'}</div>
+      <div class="kel-nis">${s.nis}</div>
+      ${s.gender ? `<div class="kel-gender ${s.gender}">${s.gender}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+// ── Add / Edit Modal ────────────────────────────────────────────────────────
+
+function openAddStudent() {
+  editingStudent = null;
+  document.getElementById('edit-modal-title').textContent = 'Tambah Siswa';
+  document.getElementById('edit-name').value = '';
+  document.getElementById('edit-nis').value = '';
+  document.getElementById('edit-nisn').value = '';
+  document.getElementById('edit-gender').value = '';
+  document.getElementById('edit-actions').style.display = 'none';
+  document.getElementById('edit-modal').classList.add('open');
+}
+
+function openEditStudent(studentId) {
+  const s = kelolaStudents.find(x => x.id === studentId);
+  if (!s) return;
+  editingStudent = s;
+  document.getElementById('edit-modal-title').textContent = 'Edit Siswa';
+  document.getElementById('edit-name').value = s.name;
+  document.getElementById('edit-nis').value = s.nis;
+  document.getElementById('edit-nisn').value = s.nisn || '';
+  document.getElementById('edit-gender').value = s.gender || '';
+  document.getElementById('edit-actions').style.display = 'block';
+
+  const toggleBtn = document.getElementById('edit-toggle-btn');
+  if (s.is_active) {
+    toggleBtn.textContent = 'Nonaktifkan';
+    toggleBtn.style.background = 'var(--danger-light)';
+    toggleBtn.style.color = 'var(--danger)';
+  } else {
+    toggleBtn.textContent = 'Aktifkan Kembali';
+    toggleBtn.style.background = 'var(--accent-light)';
+    toggleBtn.style.color = 'var(--accent)';
+  }
+
+  document.getElementById('edit-modal').classList.add('open');
+}
+
+function closeEditModal() {
+  document.getElementById('edit-modal').classList.remove('open');
+}
+
+document.getElementById('edit-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeEditModal();
+});
+
+async function saveStudent() {
+  const name = document.getElementById('edit-name').value.trim();
+  const nis = document.getElementById('edit-nis').value.trim();
+  const nisn = document.getElementById('edit-nisn').value.trim();
+  const gender = document.getElementById('edit-gender').value;
+
+  if (!name) return toast('Nama harus diisi');
+  if (!nis) return toast('NIS harus diisi');
+
+  try {
+    if (editingStudent) {
+      // Update existing
+      await apiPost('PUT', `/students/${editingStudent.id}`, {
+        name, nis, nisn: nisn || null, gender: gender || null,
+      });
+      toast('Data siswa diperbarui ✓');
+    } else {
+      // Create new
+      const classId = document.getElementById('kelola-class-select').value;
+      if (!classId) return toast('Pilih kelas terlebih dahulu');
+      await apiPost('POST', '/students/', {
+        name, nis, nisn: nisn || null, gender: gender || null,
+        class_id: parseInt(classId),
+      });
+      toast('Siswa baru ditambahkan ✓');
+    }
+    closeEditModal();
+    loadStudentList();
+  } catch(e) {
+    toast(e.message || 'Gagal menyimpan');
+  }
+}
+
+// ── Toggle Active / Deactivate ──────────────────────────────────────────────
+
+async function toggleStudentActive() {
+  if (!editingStudent) return;
+
+  const action = editingStudent.is_active ? 'menonaktifkan' : 'mengaktifkan kembali';
+  if (!confirm(`Yakin ingin ${action} ${editingStudent.name}?`)) return;
+
+  try {
+    if (editingStudent.is_active) {
+      await apiPost('DELETE', `/students/${editingStudent.id}`);
+      toast('Siswa dinonaktifkan');
+    } else {
+      await apiPost('POST', `/students/${editingStudent.id}/reactivate`);
+      toast('Siswa diaktifkan kembali ✓');
+    }
+    closeEditModal();
+    loadStudentList();
+  } catch(e) {
+    toast(e.message || 'Gagal mengubah status');
+  }
+}
+
+// ── Move Student ────────────────────────────────────────────────────────────
+
+function openMoveStudent() {
+  if (!editingStudent) return;
+  const currentClassId = document.getElementById('kelola-class-select').value;
+
+  document.getElementById('move-info').textContent =
+    `Pindahkan ${editingStudent.name} dari kelas ini ke:`;
+
+  const sel = document.getElementById('move-class-select');
+  sel.innerHTML = kelolaClasses
+    .filter(c => String(c.id) !== String(currentClassId))
+    .map(c => `<option value="${c.id}">${c.name}</option>`)
+    .join('');
+
+  closeEditModal();
+  document.getElementById('move-modal').classList.add('open');
+}
+
+function closeMoveModal() {
+  document.getElementById('move-modal').classList.remove('open');
+}
+
+document.getElementById('move-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeMoveModal();
+});
+
+async function confirmMoveStudent() {
+  if (!editingStudent) return;
+  const newClassId = document.getElementById('move-class-select').value;
+  if (!newClassId) return toast('Pilih kelas tujuan');
+
+  try {
+    const result = await apiPost('POST', `/students/${editingStudent.id}/move`, {
+      new_class_id: parseInt(newClassId),
+    });
+    toast(`${result.name} dipindah ke ${result.to_class} ✓`);
+    closeMoveModal();
+    loadStudentList();
+  } catch(e) {
+    toast(e.message || 'Gagal memindahkan siswa');
+  }
+}
+
+// ── API helper for POST/PUT/DELETE ──────────────────────────────────────────
+
+async function apiPost(method, path, body) {
+  const opts = { method, headers: {'Content-Type': 'application/json'} };
+  if (body) opts.body = JSON.stringify(body);
+  const r = await fetch(API + path, opts);
+  if (!r.ok) {
+    const err = await r.json().catch(() => ({detail:'Request failed'}));
+    throw new Error(err.detail || 'Request failed');
+  }
+  if (method === 'DELETE') return {};
+  return r.json();
 }
 
 // ── Init ────────────────────────────────────────────────────────────────────
