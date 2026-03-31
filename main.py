@@ -109,6 +109,12 @@ def panel_page():
     return FileResponse(FRONTEND_DIR / "panel.html")
 
 
+@app.get("/admin-dashboard")
+def admin_dashboard_page():
+    """Serve the admin-only dashboard (Per Kelas + Laporan, class-filtered)."""
+    return FileResponse(FRONTEND_DIR / "admin-dashboard.html")
+
+
 @app.get("/api")
 def api_info():
     return {
