@@ -450,6 +450,7 @@ async function doLogin() {
 
 function doLogout() {
   sessionStorage.removeItem('hadir_auth');
+  sessionStorage.removeItem('hadir_recording');
   window.location.replace('/login');
 }
 
@@ -460,6 +461,11 @@ async function doVerifyTotp() {
     const result = await api('POST', '/attendance/session/start', {staff_id:state.staffId, totp_code:code});
     state.recordingSessionId = result.recording_session_id;
     state.recordedSlots = [];
+    // Persist session so returning from dashboard doesn't require re-verification
+    sessionStorage.setItem('hadir_recording', JSON.stringify({
+      recordingSessionId: result.recording_session_id,
+      recordedSlots: [],
+    }));
     await loadClasses();
     document.getElementById('date-select').value = todayStr();
     document.getElementById('sched-info').textContent = `${state.staffName} · ${selectedDay()}, ${selectedDate()}`;
@@ -587,6 +593,10 @@ async function doSubmitAttendance() {
       student_statuses: state.students.map(s => ({student_id:s.student_id, status:s.status})),
     });
     state.recordedSlots.push(state.selectedSlot.slot_id);
+    // Keep sessionStorage in sync so returning from dashboard shows correct greyed slots
+    const _rec = JSON.parse(sessionStorage.getItem('hadir_recording') || '{}');
+    _rec.recordedSlots = state.recordedSlots;
+    sessionStorage.setItem('hadir_recording', JSON.stringify(_rec));
     toast('Presensi tersimpan ✓');
     loadSlots(); goTo('schedule');
   } catch(e) { toast(e.message); }
@@ -595,6 +605,7 @@ async function doCompleteSession() {
   if (state.recordedSlots.length===0 && !confirm('Belum ada presensi. Yakin selesai?')) return;
   try {
     const result = await api('POST', `/attendance/session/${state.recordingSessionId}/complete`);
+    sessionStorage.removeItem('hadir_recording');
     document.getElementById('session-summary').innerHTML = `
       <div style="text-align:center;margin-bottom:16px">
         <div style="font-size:40px;margin-bottom:8px">✓</div>
@@ -610,13 +621,38 @@ function confirmExit() {
   doLogout();
 }
 
-// On load: go directly to TOTP screen (skip login screen since auth done on /login page)
-document.getElementById('totp-staff-name').textContent = state.staffName;
-goTo('totp');
-document.getElementById('totp-input').focus();
-
 document.getElementById('pin-input').addEventListener('keydown', e => {if(e.key==='Enter') doLogin();});
 document.getElementById('totp-input').addEventListener('keydown', e => {if(e.key==='Enter') doVerifyTotp();});
+
+// On load: restore active session if exists, otherwise go to TOTP
+(async function init() {
+  const rec = JSON.parse(sessionStorage.getItem('hadir_recording') || 'null');
+  if (rec && rec.recordingSessionId) {
+    // Restore the active recording session — no TOTP needed again
+    state.recordingSessionId = rec.recordingSessionId;
+    state.recordedSlots = rec.recordedSlots || [];
+    try {
+      await loadClasses();
+      document.getElementById('date-select').value = todayStr();
+      document.getElementById('sched-info').textContent =
+        `${state.staffName} · ${selectedDay()}, ${selectedDate()}`;
+      goTo('schedule');
+      if (state.recordedSlots.length > 0) {
+        toast(`Sesi dilanjutkan · ${state.recordedSlots.length} kelas tercatat`);
+      }
+    } catch(e) {
+      // Session invalid or server unreachable — fall back to TOTP
+      sessionStorage.removeItem('hadir_recording');
+      document.getElementById('totp-staff-name').textContent = state.staffName;
+      goTo('totp');
+      document.getElementById('totp-input').focus();
+    }
+  } else {
+    document.getElementById('totp-staff-name').textContent = state.staffName;
+    goTo('totp');
+    document.getElementById('totp-input').focus();
+  }
+})();
 </script>
 </body>
 </html>

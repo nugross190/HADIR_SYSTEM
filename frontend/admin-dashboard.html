@@ -233,7 +233,7 @@ body {
     <h1>Dashboard</h1>
     <div class="subtitle" id="top-subtitle">Memuat...</div>
   </div>
-  <a href="/input" class="nav-home">← Presensi</a>
+  <a href="/input" class="nav-home" id="back-btn">← Lanjut Presensi</a>
 </div>
 
 <div class="tab-nav">
@@ -593,6 +593,19 @@ function renderAssignmentChips() {
 
 // Set top bar info
 document.getElementById('top-subtitle').textContent = `${ADMIN_NAME} · Kelas X & XI`;
+
+// Show active session status in back button
+(function() {
+  const rec = JSON.parse(sessionStorage.getItem('hadir_recording') || 'null');
+  const btn = document.getElementById('back-btn');
+  if (rec && rec.recordingSessionId) {
+    const count = (rec.recordedSlots || []).length;
+    btn.textContent = `← Lanjut Presensi (${count} tercatat)`;
+    btn.style.background = 'rgba(255,255,255,.25)';
+  } else {
+    btn.textContent = '← Mulai Presensi';
+  }
+})();
 
 renderAssignmentChips();
 
