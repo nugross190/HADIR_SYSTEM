@@ -225,12 +225,11 @@ body {
 </div>
 
 <script>
-// Check auth — panel requires owner role
+// Auth check — panel requires owner session
 (function() {
   try {
     const sess = JSON.parse(sessionStorage.getItem('hadir_auth') || 'null');
     if (!sess || sess.role !== 'owner') {
-      // Not authenticated as owner — show login prompt
       document.body.innerHTML = `
         <div style="font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F6F5F0">
           <div style="text-align:center;padding:40px 20px">
@@ -242,10 +241,7 @@ body {
         </div>`;
       return;
     }
-  } catch(e) {
-    window.location.replace('/login');
-    return;
-  }
+  } catch(e) { window.location.replace('/login'); return; }
 })();
 
 function setOwnerSession() {
@@ -260,7 +256,7 @@ function clearSession() {
   sessionStorage.removeItem('hadir_auth');
 }
 
-// Owner session already verified by auth check above
+// Owner session already verified above
 
 function toast(msg, dur=2500) {
   const t = document.createElement('div'); t.className='toast'; t.textContent=msg;

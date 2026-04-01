@@ -181,7 +181,7 @@ body {
     </div>
   </div>
   <div style="text-align:center;padding:24px 16px 0">
-    <span style="font-size:11px;color:var(--text-3);cursor:pointer;opacity:.4" onclick="selectRole('owner')">Administrator</span>
+    <span style="font-size:11px;color:var(--text-3);cursor:pointer;opacity:.35" onclick="selectRole('owner')">Administrator</span>
   </div>
 </div>
 
@@ -237,25 +237,28 @@ async function selectRole(role) {
   selectedStaffId = null;
   selectedStaffName = '';
 
-  // Owner goes straight to PIN — no staff list
+  document.getElementById('pin-section').style.display = 'none';
+  document.getElementById('pin-input').value = '';
+
+  // Owner — skip staff list, go straight to PIN
   if (role === 'owner') {
     document.getElementById('login-title').textContent = 'Administrator';
     document.getElementById('login-subtitle').textContent = 'Masukkan PIN administrator';
     document.getElementById('staff-list').innerHTML = '';
     document.getElementById('pin-section').style.display = 'block';
     document.getElementById('selected-name-hint').textContent = '';
-    document.getElementById('pin-input').value = '';
     goTo('login');
     document.getElementById('pin-input').focus();
     return;
   }
 
-  document.getElementById('login-title').textContent =
-    role === 'admin' ? 'Login Admin' : 'Login Kepala Sekolah';
-  document.getElementById('login-subtitle').textContent =
-    role === 'admin' ? 'Pilih akun admin Anda' : 'Masuk sebagai kepala sekolah';
-  document.getElementById('pin-section').style.display = 'none';
-  document.getElementById('pin-input').value = '';
+  // Admin or Headmaster — show staff list
+  const titles = {
+    admin: ['Login Admin', 'Pilih akun admin Anda'],
+    headmaster: ['Login Kepala Sekolah', 'Masuk sebagai kepala sekolah'],
+  };
+  document.getElementById('login-title').textContent = titles[role][0];
+  document.getElementById('login-subtitle').textContent = titles[role][1];
 
   goTo('login');
 
@@ -264,7 +267,7 @@ async function selectRole(role) {
     const staff = await r.json();
     const isHeadmaster = role === 'headmaster';
     document.getElementById('staff-list').innerHTML = staff.length === 0
-      ? '<div class="empty-state"><div class="icon">⚠</div><div>Tidak ada akun tersedia</div></div>'
+      ? `<div class="empty-state"><div class="icon">⚠</div><div>Tidak ada akun ${isHeadmaster ? 'kepala sekolah' : 'admin'} terdaftar</div><div style="font-size:12px;margin-top:4px">Hubungi administrator</div></div>`
       : staff.map(s => `
           <button class="staff-btn ${isHeadmaster ? 'headmaster' : ''}" onclick="selectStaff(${s.staff_id}, '${s.name.replace(/'/g,"\\'")}', this)">
             <div class="avatar">${s.name.charAt(0)}</div>
@@ -293,7 +296,7 @@ async function doLogin() {
   const pin = document.getElementById('pin-input').value;
   if (!pin) return toast('Masukkan PIN');
 
-  // Owner login — uses dedicated endpoint
+  // Owner login — dedicated endpoint
   if (selectedRole === 'owner') {
     try {
       const r = await fetch('/auth/owner-login', {
@@ -305,16 +308,11 @@ async function doLogin() {
         const err = await r.json().catch(() => ({detail: 'PIN salah'}));
         return toast(err.detail || 'PIN salah');
       }
-
       sessionStorage.setItem('hadir_auth', JSON.stringify({
-        staffId: null,
-        name: 'Administrator',
-        role: 'owner',
+        staffId: null, name: 'Administrator', role: 'owner',
       }));
       window.location.replace('/panel');
-    } catch(e) {
-      toast('Gagal terhubung ke server');
-    }
+    } catch(e) { toast('Gagal terhubung ke server'); }
     return;
   }
 
@@ -334,9 +332,7 @@ async function doLogin() {
     const data = await r.json();
 
     sessionStorage.setItem('hadir_auth', JSON.stringify({
-      staffId: data.staff_id,
-      name: data.name,
-      role: data.role,
+      staffId: data.staff_id, name: data.name, role: data.role,
     }));
 
     if (data.role === 'admin') window.location.replace('/input');
