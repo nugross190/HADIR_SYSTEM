@@ -105,14 +105,8 @@ def dashboard_page():
 
 @app.get("/panel")
 def panel_page():
-    """Serve the owner admin panel (no login required)."""
+    """Serve the owner admin panel."""
     return FileResponse(FRONTEND_DIR / "panel.html")
-
-
-@app.get("/admin-dashboard")
-def admin_dashboard_page():
-    """Serve the admin-only dashboard (Per Kelas + Laporan, class-filtered)."""
-    return FileResponse(FRONTEND_DIR / "admin-dashboard.html")
 
 
 @app.get("/api")

@@ -146,7 +146,7 @@ body {
 <div class="top-bar">
   <h1>Panel Administrator</h1>
   <div class="subtitle">HADIR — SMAN 5 Garut</div>
-  <div class="badge">AKSES PENUH — TANPA PASSWORD</div>
+  <div class="badge">ADMINISTRATOR</div>
 </div>
 
 <div class="content">
@@ -225,7 +225,29 @@ body {
 </div>
 
 <script>
-// Set owner session immediately so dashboard link works
+// Check auth — panel requires owner role
+(function() {
+  try {
+    const sess = JSON.parse(sessionStorage.getItem('hadir_auth') || 'null');
+    if (!sess || sess.role !== 'owner') {
+      // Not authenticated as owner — show login prompt
+      document.body.innerHTML = `
+        <div style="font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F6F5F0">
+          <div style="text-align:center;padding:40px 20px">
+            <div style="font-size:40px;margin-bottom:12px">🔐</div>
+            <div style="font-size:18px;font-weight:600;margin-bottom:8px">Akses Ditolak</div>
+            <div style="font-size:13px;color:#5C5B57;margin-bottom:20px">Halaman ini membutuhkan akses administrator</div>
+            <a href="/login" style="display:inline-block;padding:12px 24px;background:#1B7A43;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px">Ke Halaman Login</a>
+          </div>
+        </div>`;
+      return;
+    }
+  } catch(e) {
+    window.location.replace('/login');
+    return;
+  }
+})();
+
 function setOwnerSession() {
   sessionStorage.setItem('hadir_auth', JSON.stringify({
     staffId: null,
@@ -238,8 +260,7 @@ function clearSession() {
   sessionStorage.removeItem('hadir_auth');
 }
 
-// Always set owner session when panel is open
-setOwnerSession();
+// Owner session already verified by auth check above
 
 function toast(msg, dur=2500) {
   const t = document.createElement('div'); t.className='toast'; t.textContent=msg;

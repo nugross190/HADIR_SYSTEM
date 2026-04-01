@@ -3,17 +3,28 @@ routers/totp.py
 ----------------
 TOTP token endpoints.
 
-GET  /totp/current    — get current code (for bell PC display)
-GET  /totp/display    — full display info with countdown + next preview
-POST /totp/validate   — check if entered code is valid
+GET  /totp/current?key=xxx    — get current code (requires display key)
+GET  /totp/display?key=xxx    — full display info (requires display key)
+POST /totp/validate           — check if entered code is valid (open — used by admin login flow)
 """
 
-from fastapi import APIRouter
+import os
+
+from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
 from services.totp_service import get_current_code, validate_code, get_display_info
 
 router = APIRouter(prefix="/totp", tags=["totp"])
+
+# Display key — set in Railway env vars. Fallback for local dev only.
+DISPLAY_KEY = os.environ.get("DISPLAY_KEY", "hadir-display-2026")
+
+
+def _check_display_key(key: str = Query(None)):
+    """Verify the display key. Blocks access if missing or wrong."""
+    if not key or key != DISPLAY_KEY:
+        raise HTTPException(status_code=403, detail="Akses ditolak")
 
 
 class ValidateRequest(BaseModel):
@@ -21,32 +32,24 @@ class ValidateRequest(BaseModel):
 
 
 @router.get("/current")
-def current_code():
-    """
-    Get the current TOTP code.
-    
-    This endpoint would be called by the bell PC display app
-    to show the current code on screen.
-    """
+def current_code(key: str = Query(None)):
+    """Get current TOTP code. Requires display key."""
+    _check_display_key(key)
     return get_current_code()
 
 
 @router.get("/display")
-def display_info():
-    """
-    Full display info for the bell PC.
-    Includes current code, countdown, and next code preview.
-    """
+def display_info(key: str = Query(None)):
+    """Full display info for bell PC. Requires display key."""
+    _check_display_key(key)
     return get_display_info()
 
 
 @router.post("/validate")
 def validate(req: ValidateRequest):
     """
-    Validate a TOTP code.
-    
-    Accepts current window + previous window (grace period).
-    Returns whether the code is valid.
+    Validate a TOTP code entered by admin staff.
+    This stays open — it's used during the attendance recording login flow.
     """
     is_valid = validate_code(req.code)
     return {"code": req.code, "valid": is_valid}
