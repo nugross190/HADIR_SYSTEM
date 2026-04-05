@@ -1258,6 +1258,73 @@ function dashLogout() {
   }
 })();
 
+// ── APPROVAL SYSTEM ─────────────────────────────────────────────────────────
+
+async function loadApprovals() {
+  if (_dashRole !== 'headmaster' && _dashRole !== 'owner') return;
+
+  try {
+    const data = await apiFetch('/approval/status');
+    const section = document.getElementById('approval-section');
+    const list = document.getElementById('approval-list');
+
+    section.style.display = 'block';
+
+    if (data.admins.length === 0) {
+      list.innerHTML = '<div style="font-size:13px;color:var(--text-3);padding:8px 0">Tidak ada admin terdaftar</div>';
+      return;
+    }
+
+    list.innerHTML = data.admins.map(a => {
+      const approved = a.approved;
+      return `<div class="approval-row">
+        <div class="approval-avatar">${a.name.charAt(0)}</div>
+        <div>
+          <div class="approval-name">${a.name}</div>
+          ${approved ? `<div style="font-size:11px;color:var(--text-3)">Disetujui oleh ${a.approved_by || 'Administrator'}</div>` : ''}
+        </div>
+        ${approved
+          ? `<span class="approval-status" style="color:var(--accent)">✓ Disetujui</span>
+             <button class="approval-btn revoke" onclick="revokeAdmin(${a.staff_id})">Cabut</button>`
+          : `<button class="approval-btn approve" onclick="approveAdmin(${a.staff_id})">Setujui</button>`
+        }
+      </div>`;
+    }).join('');
+  } catch(e) {
+    console.error('Failed to load approvals', e);
+  }
+}
+
+async function approveAdmin(staffId) {
+  try {
+    const approverStaffId = _dashSess && _dashSess.staffId ? _dashSess.staffId : null;
+    await apiPost('POST', '/approval/approve', {
+      staff_id: staffId,
+      approver_staff_id: approverStaffId,
+    });
+    toast('Admin disetujui ✓');
+    loadApprovals();
+  } catch(e) {
+    toast(e.message || 'Gagal menyetujui');
+  }
+}
+
+async function revokeAdmin(staffId) {
+  if (!confirm('Cabut persetujuan admin ini untuk hari ini?')) return;
+  try {
+    await apiPost('POST', '/approval/revoke', { staff_id: staffId });
+    toast('Persetujuan dicabut');
+    loadApprovals();
+  } catch(e) {
+    toast(e.message || 'Gagal mencabut');
+  }
+}
+
+// ── Init ────────────────────────────────────────────────────────────────────
+
+// Load approvals for headmaster/owner
+loadApprovals();
+
 // For admin: load class stats immediately (that's their first tab)
 if (_dashRole === 'admin') {
   document.getElementById('class-date').value = todayStr();
